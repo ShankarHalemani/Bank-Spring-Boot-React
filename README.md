@@ -1,2 +1,2 @@
 # Bank Application Project
-Technologies used : SPring boot, React, MySQL
+Technologies used : Spring boot, React, MySQL
