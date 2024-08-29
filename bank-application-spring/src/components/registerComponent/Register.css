@@ -1,0 +1,17 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #191919;
+  }
+  
+  .login-card {
+    width: 500px;
+    padding: 20px;
+  }
+
+  .card-body Button{
+    margin-right: 50px;
+  }
+  

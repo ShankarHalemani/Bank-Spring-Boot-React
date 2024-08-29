@@ -1,0 +1,1542 @@
+2024-08-29 00:00:39 [http-nio-8080-exec-10] INFO  c.t.a.controller.CustomerController - Fetching all active customers with no accounts
+2024-08-29 00:00:39 [http-nio-8080-exec-10] INFO  c.t.app.service.CustomerServiceImpl - Fetching all active customers with no accounts
+2024-08-29 00:01:18 [http-nio-8080-exec-4] INFO  c.t.app.controller.BankController - Searching banks with criteria - bankId: null, fullName: , abbreviation: , active: null
+2024-08-29 00:01:22 [http-nio-8080-exec-1] INFO  c.t.app.controller.BankController - Searching banks with criteria - bankId: null, fullName: , abbreviation: , active: null
+2024-08-29 00:01:44 [http-nio-8080-exec-6] INFO  c.t.app.controller.BankController - Searching banks with criteria - bankId: null, fullName: , abbreviation: , active: null
+2024-08-29 00:02:45 [http-nio-8080-exec-7] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 2
+2024-08-29 00:02:45 [http-nio-8080-exec-7] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 2
+2024-08-29 00:02:45 [http-nio-8080-exec-5] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 2
+2024-08-29 00:02:45 [http-nio-8080-exec-5] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 2
+2024-08-29 00:02:48 [http-nio-8080-exec-9] INFO  c.t.a.controller.CustomerController - Deleting customer with ID: 3
+2024-08-29 00:02:48 [http-nio-8080-exec-9] INFO  c.t.app.service.CustomerServiceImpl - Deleting customer with ID: 3
+2024-08-29 00:02:49 [http-nio-8080-exec-9] INFO  c.t.app.service.CustomerServiceImpl - Customer with ID: 3 deleted successfully
+2024-08-29 00:02:51 [http-nio-8080-exec-4] INFO  c.t.a.controller.CustomerController - Activating customer
+2024-08-29 00:02:51 [http-nio-8080-exec-4] INFO  c.t.app.service.CustomerServiceImpl - Activating customer with ID: 3
+2024-08-29 00:02:51 [http-nio-8080-exec-4] INFO  c.t.app.service.CustomerServiceImpl - Customer with ID: 3 activated successfully
+2024-08-29 00:03:02 [http-nio-8080-exec-4] INFO  c.t.a.controller.CustomerController - Fetching all active customers with no accounts
+2024-08-29 00:03:02 [http-nio-8080-exec-4] INFO  c.t.app.service.CustomerServiceImpl - Fetching all active customers with no accounts
+2024-08-29 00:20:20 [http-nio-8080-exec-8] INFO  c.t.app.controller.AuthController - User login with username: soumya@29
+2024-08-29 00:20:20 [http-nio-8080-exec-8] INFO  c.t.app.service.AuthServiceImpl - Attempting login for username: soumya@29
+2024-08-29 00:20:20 [http-nio-8080-exec-8] INFO  c.t.app.service.AuthServiceImpl - Login successful for username: soumya@29
+2024-08-29 00:20:20 [http-nio-8080-exec-9] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 00:20:20 [http-nio-8080-exec-9] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 00:20:20 [http-nio-8080-exec-2] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 00:20:20 [http-nio-8080-exec-2] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 00:20:24 [http-nio-8080-exec-10] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 00:20:24 [http-nio-8080-exec-10] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 00:20:25 [http-nio-8080-exec-4] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 00:20:25 [http-nio-8080-exec-4] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 00:20:26 [http-nio-8080-exec-6] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 00:20:26 [http-nio-8080-exec-6] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 00:20:26 [http-nio-8080-exec-5] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 00:20:37 [http-nio-8080-exec-8] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 00:20:37 [http-nio-8080-exec-8] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 00:20:37 [http-nio-8080-exec-1] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 00:20:37 [http-nio-8080-exec-1] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 00:27:06 [http-nio-8080-exec-9] INFO  c.t.app.controller.AuthController - User login with username: shankar@29
+2024-08-29 00:27:06 [http-nio-8080-exec-9] INFO  c.t.app.service.AuthServiceImpl - Attempting login for username: shankar@29
+2024-08-29 00:27:06 [http-nio-8080-exec-9] INFO  c.t.app.service.AuthServiceImpl - Login successful for username: shankar@29
+2024-08-29 00:27:09 [http-nio-8080-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+com.techlabs.app.exception.APIException: Invalid JWT token
+	at com.techlabs.app.security.JwtTokenProvider.validateToken(JwtTokenProvider.java:65)
+	at com.techlabs.app.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:33)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-08-29 00:27:13 [http-nio-8080-exec-9] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+com.techlabs.app.exception.APIException: Invalid JWT token
+	at com.techlabs.app.security.JwtTokenProvider.validateToken(JwtTokenProvider.java:65)
+	at com.techlabs.app.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:33)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-08-29 00:27:16 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+com.techlabs.app.exception.APIException: Invalid JWT token
+	at com.techlabs.app.security.JwtTokenProvider.validateToken(JwtTokenProvider.java:65)
+	at com.techlabs.app.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:33)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-08-29 00:27:59 [http-nio-8080-exec-1] INFO  c.t.app.controller.BankController - Searching banks with criteria - bankId: null, fullName: , abbreviation: , active: null
+2024-08-29 00:34:11 [http-nio-8080-exec-4] INFO  c.t.app.controller.BankController - Searching banks with criteria - bankId: null, fullName: , abbreviation: , active: null
+2024-08-29 01:13:47 [http-nio-8080-exec-1] INFO  c.t.app.controller.BankController - Searching banks with criteria - bankId: null, fullName: , abbreviation: , active: null
+2024-08-29 01:55:01 [http-nio-8080-exec-4] INFO  c.t.app.controller.BankController - Searching banks with criteria - bankId: null, fullName: , abbreviation: , active: null
+2024-08-29 02:11:29 [http-nio-8080-exec-7] INFO  c.t.app.controller.AuthController - User registration with role: ROLE_CUSTOMER
+2024-08-29 02:11:29 [http-nio-8080-exec-7] INFO  c.t.app.service.AuthServiceImpl - Attempting registration for username:  with role: ROLE_CUSTOMER
+2024-08-29 02:11:29 [http-nio-8080-exec-7] ERROR c.t.a.e.GlobalExceptionHandler - Validation failed for classes [com.techlabs.app.entity.User] during persist time for groups [jakarta.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='must not be blank', propertyPath=username, rootBeanClass=class com.techlabs.app.entity.User, messageTemplate='{jakarta.validation.constraints.NotBlank.message}'}
+]
+2024-08-29 02:11:29 [http-nio-8080-exec-7] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [jakarta.validation.ConstraintViolationException: Validation failed for classes [com.techlabs.app.entity.User] during persist time for groups [jakarta.validation.groups.Default, ]<EOL>List of constraint violations:[<EOL>?ConstraintViolationImpl{interpolatedMessage='must not be blank', propertyPath=username, rootBeanClass=class com.techlabs.app.entity.User, messageTemplate='{jakarta.validation.constraints.NotBlank.message}'}<EOL>]]
+2024-08-29 02:15:19 [http-nio-8080-exec-2] INFO  c.t.app.controller.AuthController - User registration with role: ROLE_CUSTOMER
+2024-08-29 02:15:19 [http-nio-8080-exec-2] INFO  c.t.app.service.AuthServiceImpl - Attempting registration for username:  with role: ROLE_CUSTOMER
+2024-08-29 02:15:19 [http-nio-8080-exec-2] ERROR c.t.a.e.GlobalExceptionHandler - Validation failed for classes [com.techlabs.app.entity.User] during persist time for groups [jakarta.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='must not be blank', propertyPath=username, rootBeanClass=class com.techlabs.app.entity.User, messageTemplate='{jakarta.validation.constraints.NotBlank.message}'}
+	ConstraintViolationImpl{interpolatedMessage='must not be blank', propertyPath=firstName, rootBeanClass=class com.techlabs.app.entity.User, messageTemplate='{jakarta.validation.constraints.NotBlank.message}'}
+	ConstraintViolationImpl{interpolatedMessage='must not be blank', propertyPath=lastName, rootBeanClass=class com.techlabs.app.entity.User, messageTemplate='{jakarta.validation.constraints.NotBlank.message}'}
+]
+2024-08-29 02:15:19 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [jakarta.validation.ConstraintViolationException: Validation failed for classes [com.techlabs.app.entity.User] during persist time for groups [jakarta.validation.groups.Default, ]<EOL>List of constraint violations:[<EOL>?ConstraintViolationImpl{interpolatedMessage='must not be blank', propertyPath=username, rootBeanClass=class com.techlabs.app.entity.User, messageTemplate='{jakarta.validation.constraints.NotBlank.message}'}<EOL>?ConstraintViolationImpl{interpolatedMessage='must not be blank', propertyPath=firstName, rootBeanClass=class com.techlabs.app.entity.User, messageTemplate='{jakarta.validation.constraints.NotBlank.message}'}<EOL>?ConstraintViolationImpl{interpolatedMessage='must not be blank', propertyPath=lastName, rootBeanClass=class com.techlabs.app.entity.User, messageTemplate='{jakarta.validation.constraints.NotBlank.message}'}<EOL>]]
+2024-08-29 02:15:30 [http-nio-8080-exec-3] INFO  c.t.app.controller.AuthController - User registration with role: ROLE_ADMIN
+2024-08-29 02:15:30 [http-nio-8080-exec-3] INFO  c.t.app.service.AuthServiceImpl - Attempting registration for username:  with role: ROLE_ADMIN
+2024-08-29 02:15:30 [http-nio-8080-exec-3] ERROR c.t.a.e.GlobalExceptionHandler - Validation failed for classes [com.techlabs.app.entity.User] during persist time for groups [jakarta.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='must not be blank', propertyPath=lastName, rootBeanClass=class com.techlabs.app.entity.User, messageTemplate='{jakarta.validation.constraints.NotBlank.message}'}
+	ConstraintViolationImpl{interpolatedMessage='must not be blank', propertyPath=firstName, rootBeanClass=class com.techlabs.app.entity.User, messageTemplate='{jakarta.validation.constraints.NotBlank.message}'}
+	ConstraintViolationImpl{interpolatedMessage='must not be blank', propertyPath=username, rootBeanClass=class com.techlabs.app.entity.User, messageTemplate='{jakarta.validation.constraints.NotBlank.message}'}
+]
+2024-08-29 02:15:30 [http-nio-8080-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [jakarta.validation.ConstraintViolationException: Validation failed for classes [com.techlabs.app.entity.User] during persist time for groups [jakarta.validation.groups.Default, ]<EOL>List of constraint violations:[<EOL>?ConstraintViolationImpl{interpolatedMessage='must not be blank', propertyPath=lastName, rootBeanClass=class com.techlabs.app.entity.User, messageTemplate='{jakarta.validation.constraints.NotBlank.message}'}<EOL>?ConstraintViolationImpl{interpolatedMessage='must not be blank', propertyPath=firstName, rootBeanClass=class com.techlabs.app.entity.User, messageTemplate='{jakarta.validation.constraints.NotBlank.message}'}<EOL>?ConstraintViolationImpl{interpolatedMessage='must not be blank', propertyPath=username, rootBeanClass=class com.techlabs.app.entity.User, messageTemplate='{jakarta.validation.constraints.NotBlank.message}'}<EOL>]]
+2024-08-29 02:17:35 [http-nio-8080-exec-1] INFO  c.t.app.controller.AuthController - User login with username: shankar@29
+2024-08-29 02:17:35 [http-nio-8080-exec-1] INFO  c.t.app.service.AuthServiceImpl - Attempting login for username: shankar@29
+2024-08-29 02:17:35 [http-nio-8080-exec-1] INFO  c.t.app.service.AuthServiceImpl - Login successful for username: shankar@29
+2024-08-29 02:17:44 [http-nio-8080-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+com.techlabs.app.exception.APIException: Invalid JWT token
+	at com.techlabs.app.security.JwtTokenProvider.validateToken(JwtTokenProvider.java:65)
+	at com.techlabs.app.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:33)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-08-29 02:17:50 [http-nio-8080-exec-4] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+com.techlabs.app.exception.APIException: Invalid JWT token
+	at com.techlabs.app.security.JwtTokenProvider.validateToken(JwtTokenProvider.java:65)
+	at com.techlabs.app.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:33)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-08-29 02:17:58 [http-nio-8080-exec-3] INFO  c.t.app.controller.BankController - Searching banks with criteria - bankId: null, fullName: , abbreviation: , active: null
+2024-08-29 02:18:04 [http-nio-8080-exec-7] INFO  c.t.a.controller.CustomerController - Fetching all active customers with no accounts
+2024-08-29 02:18:04 [http-nio-8080-exec-7] INFO  c.t.app.service.CustomerServiceImpl - Fetching all active customers with no accounts
+2024-08-29 02:18:29 [http-nio-8080-exec-9] INFO  c.t.app.controller.AuthController - User login with username: shankar@29
+2024-08-29 02:18:29 [http-nio-8080-exec-9] INFO  c.t.app.service.AuthServiceImpl - Attempting login for username: shankar@29
+2024-08-29 02:18:29 [http-nio-8080-exec-9] INFO  c.t.app.service.AuthServiceImpl - Login successful for username: shankar@29
+2024-08-29 02:18:52 [http-nio-8080-exec-8] INFO  c.t.app.controller.AuthController - User login with username: soumya@29
+2024-08-29 02:18:52 [http-nio-8080-exec-8] INFO  c.t.app.service.AuthServiceImpl - Attempting login for username: soumya@29
+2024-08-29 02:18:52 [http-nio-8080-exec-8] INFO  c.t.app.service.AuthServiceImpl - Login successful for username: soumya@29
+2024-08-29 02:18:52 [http-nio-8080-exec-1] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:18:52 [http-nio-8080-exec-1] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:18:52 [http-nio-8080-exec-4] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:18:52 [http-nio-8080-exec-4] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:18:54 [http-nio-8080-exec-5] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:18:54 [http-nio-8080-exec-5] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:18:55 [http-nio-8080-exec-6] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:18:55 [http-nio-8080-exec-6] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:18:55 [http-nio-8080-exec-8] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:18:55 [http-nio-8080-exec-8] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:18:56 [http-nio-8080-exec-9] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:18:56 [http-nio-8080-exec-9] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:18:57 [http-nio-8080-exec-7] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:18:57 [http-nio-8080-exec-7] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:19:00 [http-nio-8080-exec-8] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:19:00 [http-nio-8080-exec-8] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:19:00 [http-nio-8080-exec-8] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:19:00 [http-nio-8080-exec-8] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:19:02 [http-nio-8080-exec-10] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:19:02 [http-nio-8080-exec-10] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:19:02 [http-nio-8080-exec-3] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:19:02 [http-nio-8080-exec-3] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:19:03 [http-nio-8080-exec-1] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:19:03 [http-nio-8080-exec-1] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:19:03 [http-nio-8080-exec-5] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 02:19:11 [http-nio-8080-exec-10] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:19:11 [http-nio-8080-exec-10] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:19:11 [http-nio-8080-exec-3] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:19:11 [http-nio-8080-exec-3] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:19:18 [http-nio-8080-exec-6] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:19:18 [http-nio-8080-exec-6] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:19:18 [http-nio-8080-exec-2] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 02:19:20 [http-nio-8080-exec-9] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:19:20 [http-nio-8080-exec-9] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:19:20 [http-nio-8080-exec-10] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:19:20 [http-nio-8080-exec-10] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:19:26 [http-nio-8080-exec-7] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:19:26 [http-nio-8080-exec-7] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:19:27 [http-nio-8080-exec-6] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:19:27 [http-nio-8080-exec-6] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:19:38 [http-nio-8080-exec-9] INFO  c.t.app.controller.AuthController - User login with username: shankar@29
+2024-08-29 02:19:38 [http-nio-8080-exec-9] INFO  c.t.app.service.AuthServiceImpl - Attempting login for username: shankar@29
+2024-08-29 02:19:38 [http-nio-8080-exec-9] ERROR c.t.a.e.GlobalExceptionHandler - Bad credentials
+2024-08-29 02:19:38 [http-nio-8080-exec-9] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2024-08-29 02:19:46 [http-nio-8080-exec-10] INFO  c.t.app.controller.AuthController - User login with username: shankar@29
+2024-08-29 02:19:46 [http-nio-8080-exec-10] INFO  c.t.app.service.AuthServiceImpl - Attempting login for username: shankar@29
+2024-08-29 02:19:46 [http-nio-8080-exec-10] INFO  c.t.app.service.AuthServiceImpl - Login successful for username: shankar@29
+2024-08-29 02:20:12 [http-nio-8080-exec-3] INFO  c.t.app.controller.AuthController - User login with username: soumya@29
+2024-08-29 02:20:12 [http-nio-8080-exec-3] INFO  c.t.app.service.AuthServiceImpl - Attempting login for username: soumya@29
+2024-08-29 02:20:12 [http-nio-8080-exec-3] INFO  c.t.app.service.AuthServiceImpl - Login successful for username: soumya@29
+2024-08-29 02:20:12 [http-nio-8080-exec-6] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:20:12 [http-nio-8080-exec-6] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:20:12 [http-nio-8080-exec-2] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:20:12 [http-nio-8080-exec-2] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:20:15 [http-nio-8080-exec-9] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:20:15 [http-nio-8080-exec-9] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:20:16 [http-nio-8080-exec-8] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:20:16 [http-nio-8080-exec-8] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:20:18 [http-nio-8080-exec-10] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:20:18 [http-nio-8080-exec-10] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:20:26 [http-nio-8080-exec-5] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:20:26 [http-nio-8080-exec-5] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:20:27 [http-nio-8080-exec-6] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:20:27 [http-nio-8080-exec-6] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:20:30 [http-nio-8080-exec-7] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:20:30 [http-nio-8080-exec-7] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:20:30 [http-nio-8080-exec-1] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:20:30 [http-nio-8080-exec-1] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:20:33 [http-nio-8080-exec-3] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:20:33 [http-nio-8080-exec-3] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:20:33 [http-nio-8080-exec-10] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:20:33 [http-nio-8080-exec-10] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:20:34 [http-nio-8080-exec-5] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:20:34 [http-nio-8080-exec-5] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:20:34 [http-nio-8080-exec-1] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 02:20:39 [http-nio-8080-exec-8] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:20:39 [http-nio-8080-exec-8] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:20:39 [http-nio-8080-exec-10] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:20:39 [http-nio-8080-exec-10] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:20:54 [http-nio-8080-exec-4] INFO  c.t.app.controller.AuthController - User login with username: shankar@29
+2024-08-29 02:20:54 [http-nio-8080-exec-4] INFO  c.t.app.service.AuthServiceImpl - Attempting login for username: shankar@29
+2024-08-29 02:20:54 [http-nio-8080-exec-4] INFO  c.t.app.service.AuthServiceImpl - Login successful for username: shankar@29
+2024-08-29 02:21:36 [http-nio-8080-exec-1] INFO  c.t.app.controller.AuthController - User login with username: soumya@29
+2024-08-29 02:21:36 [http-nio-8080-exec-1] INFO  c.t.app.service.AuthServiceImpl - Attempting login for username: soumya@29
+2024-08-29 02:21:36 [http-nio-8080-exec-1] INFO  c.t.app.service.AuthServiceImpl - Login successful for username: soumya@29
+2024-08-29 02:21:36 [http-nio-8080-exec-10] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:21:36 [http-nio-8080-exec-10] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:21:36 [http-nio-8080-exec-7] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:21:36 [http-nio-8080-exec-7] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:21:39 [http-nio-8080-exec-5] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:21:39 [http-nio-8080-exec-5] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:21:39 [http-nio-8080-exec-1] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:21:39 [http-nio-8080-exec-1] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:21:39 [http-nio-8080-exec-3] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:21:39 [http-nio-8080-exec-3] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:21:39 [http-nio-8080-exec-6] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:21:39 [http-nio-8080-exec-6] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:21:40 [http-nio-8080-exec-2] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:21:40 [http-nio-8080-exec-2] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:21:41 [http-nio-8080-exec-10] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:21:41 [http-nio-8080-exec-10] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:21:42 [http-nio-8080-exec-7] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:21:42 [http-nio-8080-exec-7] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:21:43 [http-nio-8080-exec-4] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:21:43 [http-nio-8080-exec-4] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:21:44 [http-nio-8080-exec-5] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:21:44 [http-nio-8080-exec-5] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:21:44 [http-nio-8080-exec-6] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 02:21:45 [http-nio-8080-exec-8] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:21:45 [http-nio-8080-exec-8] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:21:45 [http-nio-8080-exec-10] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 02:21:45 [http-nio-8080-exec-10] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 02:27:08 [http-nio-8080-exec-3] INFO  c.t.app.controller.AuthController - User login with username: shankar@29
+2024-08-29 02:27:08 [http-nio-8080-exec-3] INFO  c.t.app.service.AuthServiceImpl - Attempting login for username: shankar@29
+2024-08-29 02:27:08 [http-nio-8080-exec-3] INFO  c.t.app.service.AuthServiceImpl - Login successful for username: shankar@29
+2024-08-29 02:32:31 [http-nio-8080-exec-2] INFO  c.t.app.controller.AccountController - Creating new account for customerId: 3 and bankId: 4
+2024-08-29 02:32:31 [http-nio-8080-exec-2] INFO  c.t.app.service.AccountServiceImpl - Creating new account for customer ID: 3 in bank ID: 4
+2024-08-29 02:32:31 [http-nio-8080-exec-2] INFO  c.t.app.service.AccountServiceImpl - New account created with account number: 34
+2024-08-29 03:00:36 [http-nio-8080-exec-1] INFO  c.t.a.controller.CustomerController - Fetching all active customers with no accounts
+2024-08-29 03:00:36 [http-nio-8080-exec-1] INFO  c.t.app.service.CustomerServiceImpl - Fetching all active customers with no accounts
+2024-08-29 03:01:05 [http-nio-8080-exec-3] INFO  c.t.app.controller.AuthController - User login with username: soumya@29
+2024-08-29 03:01:05 [http-nio-8080-exec-3] INFO  c.t.app.service.AuthServiceImpl - Attempting login for username: soumya@29
+2024-08-29 03:01:05 [http-nio-8080-exec-3] INFO  c.t.app.service.AuthServiceImpl - Login successful for username: soumya@29
+2024-08-29 03:01:05 [http-nio-8080-exec-9] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:01:05 [http-nio-8080-exec-9] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:01:05 [http-nio-8080-exec-4] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:01:05 [http-nio-8080-exec-4] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:01:06 [http-nio-8080-exec-5] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:01:06 [http-nio-8080-exec-5] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:01:06 [http-nio-8080-exec-3] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:01:06 [http-nio-8080-exec-3] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:01:10 [http-nio-8080-exec-6] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:01:10 [http-nio-8080-exec-6] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:01:10 [http-nio-8080-exec-10] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:01:14 [http-nio-8080-exec-5] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:01:14 [http-nio-8080-exec-5] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:01:14 [http-nio-8080-exec-3] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:01:14 [http-nio-8080-exec-3] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:06:50 [http-nio-8080-exec-7] INFO  c.t.app.controller.AuthController - User login with username: shankar@29
+2024-08-29 03:06:50 [http-nio-8080-exec-7] INFO  c.t.app.service.AuthServiceImpl - Attempting login for username: shankar@29
+2024-08-29 03:06:50 [http-nio-8080-exec-7] INFO  c.t.app.service.AuthServiceImpl - Login successful for username: shankar@29
+2024-08-29 03:06:56 [http-nio-8080-exec-10] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 2
+2024-08-29 03:06:56 [http-nio-8080-exec-10] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 2
+2024-08-29 03:06:56 [http-nio-8080-exec-4] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 2
+2024-08-29 03:06:56 [http-nio-8080-exec-4] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 2
+2024-08-29 03:07:18 [http-nio-8080-exec-5] INFO  c.t.a.controller.CustomerController - Updating customer details
+2024-08-29 03:07:18 [http-nio-8080-exec-5] INFO  c.t.app.service.CustomerServiceImpl - Updating customer with ID: 2
+2024-08-29 03:07:18 [http-nio-8080-exec-5] INFO  c.t.app.service.CustomerServiceImpl - Customer with ID: 2 updated successfully
+2024-08-29 03:07:18 [http-nio-8080-exec-3] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 2
+2024-08-29 03:07:18 [http-nio-8080-exec-3] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 2
+2024-08-29 03:07:39 [http-nio-8080-exec-4] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 2
+2024-08-29 03:07:39 [http-nio-8080-exec-4] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 2
+2024-08-29 03:07:39 [http-nio-8080-exec-8] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 2
+2024-08-29 03:07:39 [http-nio-8080-exec-8] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 2
+2024-08-29 03:07:42 [http-nio-8080-exec-6] INFO  c.t.a.controller.CustomerController - Updating customer details
+2024-08-29 03:07:42 [http-nio-8080-exec-6] INFO  c.t.app.service.CustomerServiceImpl - Updating customer with ID: 2
+2024-08-29 03:07:42 [http-nio-8080-exec-6] INFO  c.t.app.service.CustomerServiceImpl - Customer with ID: 2 updated successfully
+2024-08-29 03:07:42 [http-nio-8080-exec-2] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 2
+2024-08-29 03:07:42 [http-nio-8080-exec-2] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 2
+2024-08-29 03:07:49 [http-nio-8080-exec-5] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 2
+2024-08-29 03:07:49 [http-nio-8080-exec-5] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 2
+2024-08-29 03:07:49 [http-nio-8080-exec-3] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 2
+2024-08-29 03:07:49 [http-nio-8080-exec-3] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 2
+2024-08-29 03:08:00 [http-nio-8080-exec-2] INFO  c.t.a.controller.CustomerController - Updating customer details
+2024-08-29 03:08:00 [http-nio-8080-exec-2] INFO  c.t.app.service.CustomerServiceImpl - Updating customer with ID: 2
+2024-08-29 03:08:00 [http-nio-8080-exec-2] INFO  c.t.app.service.CustomerServiceImpl - Customer with ID: 2 updated successfully
+2024-08-29 03:08:00 [http-nio-8080-exec-7] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 2
+2024-08-29 03:08:00 [http-nio-8080-exec-7] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 2
+2024-08-29 03:08:26 [http-nio-8080-exec-3] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 4
+2024-08-29 03:08:26 [http-nio-8080-exec-3] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 4
+2024-08-29 03:08:27 [http-nio-8080-exec-10] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 4
+2024-08-29 03:08:27 [http-nio-8080-exec-10] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 4
+2024-08-29 03:08:30 [http-nio-8080-exec-9] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 3
+2024-08-29 03:08:30 [http-nio-8080-exec-9] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 3
+2024-08-29 03:08:30 [http-nio-8080-exec-1] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 3
+2024-08-29 03:08:30 [http-nio-8080-exec-1] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 3
+2024-08-29 03:08:32 [http-nio-8080-exec-8] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 2
+2024-08-29 03:08:32 [http-nio-8080-exec-8] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 2
+2024-08-29 03:08:32 [http-nio-8080-exec-2] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 2
+2024-08-29 03:08:32 [http-nio-8080-exec-2] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 2
+2024-08-29 03:08:46 [http-nio-8080-exec-7] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 2
+2024-08-29 03:08:46 [http-nio-8080-exec-7] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 2
+2024-08-29 03:08:46 [http-nio-8080-exec-1] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 2
+2024-08-29 03:08:46 [http-nio-8080-exec-1] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 2
+2024-08-29 03:08:55 [http-nio-8080-exec-8] INFO  c.t.a.controller.CustomerController - Updating customer details
+2024-08-29 03:08:55 [http-nio-8080-exec-8] INFO  c.t.app.service.CustomerServiceImpl - Updating customer with ID: 2
+2024-08-29 03:08:55 [http-nio-8080-exec-8] INFO  c.t.app.service.CustomerServiceImpl - Customer with ID: 2 updated successfully
+2024-08-29 03:08:55 [http-nio-8080-exec-6] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 2
+2024-08-29 03:08:55 [http-nio-8080-exec-6] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 2
+2024-08-29 03:09:03 [http-nio-8080-exec-1] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 2
+2024-08-29 03:09:03 [http-nio-8080-exec-1] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 2
+2024-08-29 03:09:03 [http-nio-8080-exec-3] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 2
+2024-08-29 03:09:03 [http-nio-8080-exec-3] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 2
+2024-08-29 03:09:15 [http-nio-8080-exec-2] INFO  c.t.a.controller.CustomerController - Updating customer details
+2024-08-29 03:09:15 [http-nio-8080-exec-2] INFO  c.t.app.service.CustomerServiceImpl - Updating customer with ID: 2
+2024-08-29 03:09:15 [http-nio-8080-exec-2] INFO  c.t.app.service.CustomerServiceImpl - Customer with ID: 2 updated successfully
+2024-08-29 03:09:15 [http-nio-8080-exec-7] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 2
+2024-08-29 03:09:15 [http-nio-8080-exec-7] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 2
+2024-08-29 03:09:32 [http-nio-8080-exec-2] INFO  c.t.a.controller.CustomerController - Deleting customer with ID: 2
+2024-08-29 03:09:32 [http-nio-8080-exec-2] INFO  c.t.app.service.CustomerServiceImpl - Deleting customer with ID: 2
+2024-08-29 03:09:32 [http-nio-8080-exec-2] INFO  c.t.app.service.CustomerServiceImpl - Customer with ID: 2 deleted successfully
+2024-08-29 03:09:33 [http-nio-8080-exec-7] INFO  c.t.a.controller.CustomerController - Activating customer
+2024-08-29 03:09:33 [http-nio-8080-exec-7] INFO  c.t.app.service.CustomerServiceImpl - Activating customer with ID: 2
+2024-08-29 03:09:33 [http-nio-8080-exec-7] INFO  c.t.app.service.CustomerServiceImpl - Customer with ID: 2 activated successfully
+2024-08-29 03:09:37 [http-nio-8080-exec-9] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 2
+2024-08-29 03:09:37 [http-nio-8080-exec-9] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 2
+2024-08-29 03:09:37 [http-nio-8080-exec-5] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 2
+2024-08-29 03:09:37 [http-nio-8080-exec-5] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 2
+2024-08-29 03:09:44 [http-nio-8080-exec-3] INFO  c.t.a.controller.CustomerController - Updating customer details
+2024-08-29 03:09:44 [http-nio-8080-exec-3] INFO  c.t.app.service.CustomerServiceImpl - Updating customer with ID: 2
+2024-08-29 03:09:44 [http-nio-8080-exec-3] INFO  c.t.app.service.CustomerServiceImpl - Customer with ID: 2 updated successfully
+2024-08-29 03:09:44 [http-nio-8080-exec-2] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 2
+2024-08-29 03:09:44 [http-nio-8080-exec-2] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 2
+2024-08-29 03:10:01 [http-nio-8080-exec-6] INFO  c.t.a.controller.CustomerController - Fetching all active customers with no accounts
+2024-08-29 03:10:01 [http-nio-8080-exec-6] INFO  c.t.app.service.CustomerServiceImpl - Fetching all active customers with no accounts
+2024-08-29 03:10:02 [http-nio-8080-exec-10] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 27
+2024-08-29 03:10:02 [http-nio-8080-exec-10] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 27
+2024-08-29 03:10:02 [http-nio-8080-exec-4] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 27
+2024-08-29 03:10:02 [http-nio-8080-exec-4] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 27
+2024-08-29 03:10:19 [http-nio-8080-exec-5] INFO  c.t.app.controller.AccountController - Creating new account for customerId: 27 and bankId: 2
+2024-08-29 03:10:19 [http-nio-8080-exec-5] INFO  c.t.app.service.AccountServiceImpl - Creating new account for customer ID: 27 in bank ID: 2
+2024-08-29 03:10:19 [http-nio-8080-exec-5] ERROR c.t.a.e.GlobalExceptionHandler - Bank with ID : 2 is not active
+2024-08-29 03:10:19 [http-nio-8080-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.techlabs.app.exception.BankRealtedException: Bank with ID : 2 is not active]
+2024-08-29 03:10:27 [http-nio-8080-exec-8] INFO  c.t.app.controller.AccountController - Creating new account for customerId: 27 and bankId: 4
+2024-08-29 03:10:27 [http-nio-8080-exec-8] INFO  c.t.app.service.AccountServiceImpl - Creating new account for customer ID: 27 in bank ID: 4
+2024-08-29 03:10:27 [http-nio-8080-exec-8] INFO  c.t.app.service.AccountServiceImpl - New account created with account number: 35
+2024-08-29 03:10:32 [http-nio-8080-exec-2] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 27
+2024-08-29 03:10:32 [http-nio-8080-exec-2] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 27
+2024-08-29 03:10:43 [http-nio-8080-exec-8] INFO  c.t.app.controller.AccountController - Deleting account with account number: 1
+2024-08-29 03:10:43 [http-nio-8080-exec-8] INFO  c.t.app.service.AccountServiceImpl - Deleting account with account number: 1
+2024-08-29 03:10:47 [http-nio-8080-exec-8] INFO  c.t.app.service.AccountServiceImpl - Account with account number: 1 has been deleted
+2024-08-29 03:10:49 [http-nio-8080-exec-2] INFO  c.t.app.controller.AccountController - Activating account with account number: 1
+2024-08-29 03:10:49 [http-nio-8080-exec-2] INFO  c.t.app.service.AccountServiceImpl - Activating account with account number: 1
+2024-08-29 03:10:53 [http-nio-8080-exec-2] INFO  c.t.app.service.AccountServiceImpl - Account with account number: 1 has been activated
+2024-08-29 03:11:01 [http-nio-8080-exec-2] INFO  c.t.a.controller.CustomerController - Fetching all active customers with no accounts
+2024-08-29 03:11:01 [http-nio-8080-exec-2] INFO  c.t.app.service.CustomerServiceImpl - Fetching all active customers with no accounts
+2024-08-29 03:11:11 [http-nio-8080-exec-3] INFO  c.t.app.controller.BankController - Searching banks with criteria - bankId: null, fullName: , abbreviation: , active: null
+2024-08-29 03:11:12 [http-nio-8080-exec-6] INFO  c.t.app.controller.BankController - Fetching bank with ID: 3
+2024-08-29 03:11:12 [http-nio-8080-exec-6] INFO  c.t.app.service.BankServiceImpl - Fetching bank with ID: 3
+2024-08-29 03:11:12 [http-nio-8080-exec-10] INFO  c.t.app.controller.BankController - Fetching bank with ID: 3
+2024-08-29 03:11:12 [http-nio-8080-exec-10] INFO  c.t.app.service.BankServiceImpl - Fetching bank with ID: 3
+2024-08-29 03:11:22 [http-nio-8080-exec-4] ERROR c.t.a.e.GlobalExceptionHandler - Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.techlabs.app.dto.BankResponseDTO> com.techlabs.app.controller.BankController.updateBank(com.techlabs.app.dto.BankRequestDTO): [Field error in object 'bankRequestDTO' on field 'abbreviation': rejected value []; codes [NotBlank.bankRequestDTO.abbreviation,NotBlank.abbreviation,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bankRequestDTO.abbreviation,abbreviation]; arguments []; default message [abbreviation]]; default message [must not be blank]] 
+2024-08-29 03:11:22 [http-nio-8080-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.techlabs.app.dto.BankResponseDTO> com.techlabs.app.controller.BankController.updateBank(com.techlabs.app.dto.BankRequestDTO): [Field error in object 'bankRequestDTO' on field 'abbreviation': rejected value []; codes [NotBlank.bankRequestDTO.abbreviation,NotBlank.abbreviation,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bankRequestDTO.abbreviation,abbreviation]; arguments []; default message [abbreviation]]; default message [must not be blank]] ]
+2024-08-29 03:12:23 [http-nio-8080-exec-1] INFO  c.t.app.controller.BankController - Updating bank details
+2024-08-29 03:12:23 [http-nio-8080-exec-1] INFO  c.t.app.service.BankServiceImpl - Updating bank with ID: 3
+2024-08-29 03:12:23 [http-nio-8080-exec-1] INFO  c.t.app.service.BankServiceImpl - Bank with ID: 3 updated successfully
+2024-08-29 03:12:23 [http-nio-8080-exec-3] INFO  c.t.app.controller.BankController - Fetching bank with ID: 3
+2024-08-29 03:12:23 [http-nio-8080-exec-3] INFO  c.t.app.service.BankServiceImpl - Fetching bank with ID: 3
+2024-08-29 03:12:31 [http-nio-8080-exec-6] INFO  c.t.app.controller.BankController - Fetching bank with ID: 3
+2024-08-29 03:12:31 [http-nio-8080-exec-6] INFO  c.t.app.service.BankServiceImpl - Fetching bank with ID: 3
+2024-08-29 03:12:31 [http-nio-8080-exec-7] INFO  c.t.app.controller.BankController - Fetching bank with ID: 3
+2024-08-29 03:12:31 [http-nio-8080-exec-7] INFO  c.t.app.service.BankServiceImpl - Fetching bank with ID: 3
+2024-08-29 03:12:33 [http-nio-8080-exec-9] INFO  c.t.app.controller.BankController - Updating bank details
+2024-08-29 03:12:33 [http-nio-8080-exec-9] INFO  c.t.app.service.BankServiceImpl - Updating bank with ID: 3
+2024-08-29 03:12:33 [http-nio-8080-exec-9] INFO  c.t.app.service.BankServiceImpl - Bank with ID: 3 updated successfully
+2024-08-29 03:12:33 [http-nio-8080-exec-1] INFO  c.t.app.controller.BankController - Fetching bank with ID: 3
+2024-08-29 03:12:33 [http-nio-8080-exec-1] INFO  c.t.app.service.BankServiceImpl - Fetching bank with ID: 3
+2024-08-29 03:12:46 [http-nio-8080-exec-7] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 4
+2024-08-29 03:12:46 [http-nio-8080-exec-7] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 4
+2024-08-29 03:12:46 [http-nio-8080-exec-1] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 4
+2024-08-29 03:12:46 [http-nio-8080-exec-1] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 4
+2024-08-29 03:12:49 [http-nio-8080-exec-3] INFO  c.t.a.controller.CustomerController - Updating customer details
+2024-08-29 03:12:49 [http-nio-8080-exec-3] INFO  c.t.app.service.CustomerServiceImpl - Updating customer with ID: 4
+2024-08-29 03:12:49 [http-nio-8080-exec-3] INFO  c.t.app.service.CustomerServiceImpl - Customer with ID: 4 updated successfully
+2024-08-29 03:12:49 [http-nio-8080-exec-6] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 4
+2024-08-29 03:12:49 [http-nio-8080-exec-6] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 4
+2024-08-29 03:12:59 [http-nio-8080-exec-2] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 4
+2024-08-29 03:12:59 [http-nio-8080-exec-2] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 4
+2024-08-29 03:12:59 [http-nio-8080-exec-4] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 4
+2024-08-29 03:12:59 [http-nio-8080-exec-4] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 4
+2024-08-29 03:13:02 [http-nio-8080-exec-1] INFO  c.t.a.controller.CustomerController - Updating customer details
+2024-08-29 03:13:02 [http-nio-8080-exec-1] INFO  c.t.app.service.CustomerServiceImpl - Updating customer with ID: 4
+2024-08-29 03:13:02 [http-nio-8080-exec-1] INFO  c.t.app.service.CustomerServiceImpl - Customer with ID: 4 updated successfully
+2024-08-29 03:13:02 [http-nio-8080-exec-5] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 4
+2024-08-29 03:13:02 [http-nio-8080-exec-5] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 4
+2024-08-29 03:13:05 [http-nio-8080-exec-6] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 2
+2024-08-29 03:13:05 [http-nio-8080-exec-6] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 2
+2024-08-29 03:13:05 [http-nio-8080-exec-10] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 2
+2024-08-29 03:13:05 [http-nio-8080-exec-10] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 2
+2024-08-29 03:13:08 [http-nio-8080-exec-4] INFO  c.t.a.controller.CustomerController - Updating customer details
+2024-08-29 03:13:08 [http-nio-8080-exec-4] INFO  c.t.app.service.CustomerServiceImpl - Updating customer with ID: 2
+2024-08-29 03:13:08 [http-nio-8080-exec-4] INFO  c.t.app.service.CustomerServiceImpl - Customer with ID: 2 updated successfully
+2024-08-29 03:13:08 [http-nio-8080-exec-9] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 2
+2024-08-29 03:13:08 [http-nio-8080-exec-9] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 2
+2024-08-29 03:13:16 [http-nio-8080-exec-2] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 2
+2024-08-29 03:13:16 [http-nio-8080-exec-2] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 2
+2024-08-29 03:13:17 [http-nio-8080-exec-7] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 2
+2024-08-29 03:13:17 [http-nio-8080-exec-7] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 2
+2024-08-29 03:13:19 [http-nio-8080-exec-9] INFO  c.t.a.controller.CustomerController - Updating customer details
+2024-08-29 03:13:19 [http-nio-8080-exec-9] INFO  c.t.app.service.CustomerServiceImpl - Updating customer with ID: 2
+2024-08-29 03:13:19 [http-nio-8080-exec-9] INFO  c.t.app.service.CustomerServiceImpl - Customer with ID: 2 updated successfully
+2024-08-29 03:13:19 [http-nio-8080-exec-1] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 2
+2024-08-29 03:13:19 [http-nio-8080-exec-1] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 2
+2024-08-29 03:13:31 [http-nio-8080-exec-5] INFO  c.t.a.controller.CustomerController - Fetching All The Customers
+2024-08-29 03:13:31 [http-nio-8080-exec-5] INFO  c.t.app.service.CustomerServiceImpl - Fetching all customers
+2024-08-29 03:13:31 [http-nio-8080-exec-3] INFO  c.t.a.controller.CustomerController - Fetching All The Customers
+2024-08-29 03:13:31 [http-nio-8080-exec-3] INFO  c.t.app.service.CustomerServiceImpl - Fetching all customers
+2024-08-29 03:13:37 [http-nio-8080-exec-8] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:13:37 [http-nio-8080-exec-8] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:13:37 [http-nio-8080-exec-7] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:13:37 [http-nio-8080-exec-7] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:13:41 [http-nio-8080-exec-9] INFO  c.t.a.controller.CustomerController - Updating customer details
+2024-08-29 03:13:41 [http-nio-8080-exec-9] INFO  c.t.app.service.CustomerServiceImpl - Updating customer with ID: 5
+2024-08-29 03:13:41 [http-nio-8080-exec-9] INFO  c.t.app.service.CustomerServiceImpl - Customer with ID: 5 updated successfully
+2024-08-29 03:13:41 [http-nio-8080-exec-1] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:13:41 [http-nio-8080-exec-1] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:13:46 [http-nio-8080-exec-3] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:13:46 [http-nio-8080-exec-3] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:13:46 [http-nio-8080-exec-2] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:13:46 [http-nio-8080-exec-2] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:13:58 [http-nio-8080-exec-7] INFO  c.t.a.controller.CustomerController - Updating customer details
+2024-08-29 03:13:58 [http-nio-8080-exec-7] INFO  c.t.app.service.CustomerServiceImpl - Updating customer with ID: 5
+2024-08-29 03:13:58 [http-nio-8080-exec-7] INFO  c.t.app.service.CustomerServiceImpl - Customer with ID: 5 updated successfully
+2024-08-29 03:13:58 [http-nio-8080-exec-9] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:13:58 [http-nio-8080-exec-9] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:14:01 [http-nio-8080-exec-1] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:14:01 [http-nio-8080-exec-1] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:14:01 [http-nio-8080-exec-6] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:14:01 [http-nio-8080-exec-6] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:14:06 [http-nio-8080-exec-2] INFO  c.t.a.controller.CustomerController - Updating customer details
+2024-08-29 03:14:06 [http-nio-8080-exec-2] INFO  c.t.app.service.CustomerServiceImpl - Updating customer with ID: 5
+2024-08-29 03:14:06 [http-nio-8080-exec-2] INFO  c.t.app.service.CustomerServiceImpl - Customer with ID: 5 updated successfully
+2024-08-29 03:14:06 [http-nio-8080-exec-7] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:14:06 [http-nio-8080-exec-7] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:14:11 [http-nio-8080-exec-9] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 4
+2024-08-29 03:14:11 [http-nio-8080-exec-9] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 4
+2024-08-29 03:14:11 [http-nio-8080-exec-3] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 4
+2024-08-29 03:14:11 [http-nio-8080-exec-3] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 4
+2024-08-29 03:14:14 [http-nio-8080-exec-8] INFO  c.t.a.controller.CustomerController - Updating customer details
+2024-08-29 03:14:14 [http-nio-8080-exec-8] INFO  c.t.app.service.CustomerServiceImpl - Updating customer with ID: 4
+2024-08-29 03:14:14 [http-nio-8080-exec-8] INFO  c.t.app.service.CustomerServiceImpl - Customer with ID: 4 updated successfully
+2024-08-29 03:14:14 [http-nio-8080-exec-2] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 4
+2024-08-29 03:14:14 [http-nio-8080-exec-2] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 4
+2024-08-29 03:15:50 [http-nio-8080-exec-9] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:15:50 [http-nio-8080-exec-9] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:15:50 [http-nio-8080-exec-3] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:15:50 [http-nio-8080-exec-3] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:16:04 [http-nio-8080-exec-8] INFO  c.t.a.controller.CustomerController - Updating customer details
+2024-08-29 03:16:04 [http-nio-8080-exec-8] INFO  c.t.app.service.CustomerServiceImpl - Updating customer with ID: 5
+2024-08-29 03:16:04 [http-nio-8080-exec-8] INFO  c.t.app.service.CustomerServiceImpl - Customer with ID: 5 updated successfully
+2024-08-29 03:16:04 [http-nio-8080-exec-10] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:16:04 [http-nio-8080-exec-10] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:16:09 [http-nio-8080-exec-4] INFO  c.t.a.controller.CustomerController - Fetching All The Customers
+2024-08-29 03:16:09 [http-nio-8080-exec-4] INFO  c.t.app.service.CustomerServiceImpl - Fetching all customers
+2024-08-29 03:16:12 [http-nio-8080-exec-1] INFO  c.t.a.controller.CustomerController - Deleting customer with ID: 5
+2024-08-29 03:16:12 [http-nio-8080-exec-1] INFO  c.t.app.service.CustomerServiceImpl - Deleting customer with ID: 5
+2024-08-29 03:16:12 [http-nio-8080-exec-1] INFO  c.t.app.service.CustomerServiceImpl - Customer with ID: 5 deleted successfully
+2024-08-29 03:16:14 [http-nio-8080-exec-3] INFO  c.t.a.controller.CustomerController - Activating customer
+2024-08-29 03:16:14 [http-nio-8080-exec-3] INFO  c.t.app.service.CustomerServiceImpl - Activating customer with ID: 5
+2024-08-29 03:16:14 [http-nio-8080-exec-3] INFO  c.t.app.service.CustomerServiceImpl - Customer with ID: 5 activated successfully
+2024-08-29 03:16:20 [http-nio-8080-exec-8] INFO  c.t.a.controller.CustomerController - Deleting customer with ID: 5
+2024-08-29 03:16:20 [http-nio-8080-exec-8] INFO  c.t.app.service.CustomerServiceImpl - Deleting customer with ID: 5
+2024-08-29 03:16:20 [http-nio-8080-exec-8] INFO  c.t.app.service.CustomerServiceImpl - Customer with ID: 5 deleted successfully
+2024-08-29 03:16:24 [http-nio-8080-exec-10] INFO  c.t.a.controller.CustomerController - Activating customer
+2024-08-29 03:16:24 [http-nio-8080-exec-10] INFO  c.t.app.service.CustomerServiceImpl - Activating customer with ID: 5
+2024-08-29 03:16:24 [http-nio-8080-exec-10] INFO  c.t.app.service.CustomerServiceImpl - Customer with ID: 5 activated successfully
+2024-08-29 03:16:37 [http-nio-8080-exec-6] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 6
+2024-08-29 03:16:37 [http-nio-8080-exec-6] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 6
+2024-08-29 03:16:37 [http-nio-8080-exec-10] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 6
+2024-08-29 03:16:37 [http-nio-8080-exec-10] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 6
+2024-08-29 03:16:52 [http-nio-8080-exec-4] INFO  c.t.a.controller.CustomerController - Updating customer details
+2024-08-29 03:16:52 [http-nio-8080-exec-4] INFO  c.t.app.service.CustomerServiceImpl - Updating customer with ID: 6
+2024-08-29 03:16:52 [http-nio-8080-exec-4] INFO  c.t.app.service.CustomerServiceImpl - Customer with ID: 6 updated successfully
+2024-08-29 03:16:52 [http-nio-8080-exec-9] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 6
+2024-08-29 03:16:52 [http-nio-8080-exec-9] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 6
+2024-08-29 03:16:56 [http-nio-8080-exec-5] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 6
+2024-08-29 03:16:56 [http-nio-8080-exec-5] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 6
+2024-08-29 03:16:56 [http-nio-8080-exec-8] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 6
+2024-08-29 03:16:56 [http-nio-8080-exec-8] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 6
+2024-08-29 03:17:03 [http-nio-8080-exec-10] INFO  c.t.a.controller.CustomerController - Updating customer details
+2024-08-29 03:17:03 [http-nio-8080-exec-10] INFO  c.t.app.service.CustomerServiceImpl - Updating customer with ID: 6
+2024-08-29 03:17:03 [http-nio-8080-exec-10] INFO  c.t.app.service.CustomerServiceImpl - Customer with ID: 6 updated successfully
+2024-08-29 03:17:03 [http-nio-8080-exec-4] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 6
+2024-08-29 03:17:03 [http-nio-8080-exec-4] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 6
+2024-08-29 03:17:05 [http-nio-8080-exec-1] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 6
+2024-08-29 03:17:05 [http-nio-8080-exec-1] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 6
+2024-08-29 03:17:05 [http-nio-8080-exec-3] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 6
+2024-08-29 03:17:05 [http-nio-8080-exec-3] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 6
+2024-08-29 03:17:19 [http-nio-8080-exec-8] INFO  c.t.a.controller.CustomerController - Updating customer details
+2024-08-29 03:17:19 [http-nio-8080-exec-8] INFO  c.t.app.service.CustomerServiceImpl - Updating customer with ID: 6
+2024-08-29 03:17:19 [http-nio-8080-exec-8] INFO  c.t.app.service.CustomerServiceImpl - Customer with ID: 6 updated successfully
+2024-08-29 03:17:19 [http-nio-8080-exec-10] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 6
+2024-08-29 03:17:19 [http-nio-8080-exec-10] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 6
+2024-08-29 03:17:23 [http-nio-8080-exec-7] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 6
+2024-08-29 03:17:23 [http-nio-8080-exec-7] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 6
+2024-08-29 03:17:23 [http-nio-8080-exec-9] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 6
+2024-08-29 03:17:23 [http-nio-8080-exec-9] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 6
+2024-08-29 03:17:52 [http-nio-8080-exec-6] INFO  c.t.a.controller.CustomerController - Updating customer details
+2024-08-29 03:17:52 [http-nio-8080-exec-6] INFO  c.t.app.service.CustomerServiceImpl - Updating customer with ID: 6
+2024-08-29 03:17:52 [http-nio-8080-exec-6] INFO  c.t.app.service.CustomerServiceImpl - Customer with ID: 6 updated successfully
+2024-08-29 03:17:52 [http-nio-8080-exec-2] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 6
+2024-08-29 03:17:52 [http-nio-8080-exec-2] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 6
+2024-08-29 03:18:13 [http-nio-8080-exec-2] INFO  c.t.a.controller.CustomerController - Deleting customer with ID: 4
+2024-08-29 03:18:13 [http-nio-8080-exec-2] INFO  c.t.app.service.CustomerServiceImpl - Deleting customer with ID: 4
+2024-08-29 03:18:13 [http-nio-8080-exec-2] INFO  c.t.app.service.CustomerServiceImpl - Customer with ID: 4 deleted successfully
+2024-08-29 03:21:56 [http-nio-8080-exec-2] INFO  c.t.app.controller.AuthController - User login with username: shankar@29
+2024-08-29 03:21:56 [http-nio-8080-exec-2] INFO  c.t.app.service.AuthServiceImpl - Attempting login for username: shankar@29
+2024-08-29 03:21:57 [http-nio-8080-exec-2] INFO  c.t.app.service.AuthServiceImpl - Login successful for username: shankar@29
+2024-08-29 03:23:29 [http-nio-8080-exec-4] INFO  c.t.app.controller.AuthController - User login with username: soumya@29
+2024-08-29 03:23:29 [http-nio-8080-exec-4] INFO  c.t.app.service.AuthServiceImpl - Attempting login for username: soumya@29
+2024-08-29 03:23:29 [http-nio-8080-exec-4] INFO  c.t.app.service.AuthServiceImpl - Login successful for username: soumya@29
+2024-08-29 03:23:29 [http-nio-8080-exec-8] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:23:29 [http-nio-8080-exec-8] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:23:29 [http-nio-8080-exec-2] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:23:29 [http-nio-8080-exec-2] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:23:32 [http-nio-8080-exec-7] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:23:32 [http-nio-8080-exec-7] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:23:32 [http-nio-8080-exec-4] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:23:32 [http-nio-8080-exec-4] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:23:34 [http-nio-8080-exec-3] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:23:34 [http-nio-8080-exec-3] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:23:34 [http-nio-8080-exec-6] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:23:35 [http-nio-8080-exec-7] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:23:35 [http-nio-8080-exec-7] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:23:35 [http-nio-8080-exec-4] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:23:35 [http-nio-8080-exec-4] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:23:36 [http-nio-8080-exec-5] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:23:36 [http-nio-8080-exec-5] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:23:54 [http-nio-8080-exec-3] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:23:54 [http-nio-8080-exec-3] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:26:36 [http-nio-8080-exec-5] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:26:36 [http-nio-8080-exec-5] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:26:36 [http-nio-8080-exec-1] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:26:36 [http-nio-8080-exec-1] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:26:37 [http-nio-8080-exec-3] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:26:37 [http-nio-8080-exec-3] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:26:59 [http-nio-8080-exec-2] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:26:59 [http-nio-8080-exec-2] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:27:00 [http-nio-8080-exec-7] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:27:00 [http-nio-8080-exec-7] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:27:23 [http-nio-8080-exec-5] INFO  c.t.a.c.TransactionController - Making a transaction from account 10 to account 9 for amount -1.0
+2024-08-29 03:27:23 [http-nio-8080-exec-5] INFO  c.t.a.service.TransactionServiceImpl - Making transaction from sender account: 10 to receiver account: 9 with amount: -1.0
+2024-08-29 03:27:23 [http-nio-8080-exec-5] INFO  c.t.a.service.TransactionServiceImpl - Transaction from account: 10 to account: 9 completed successfully
+2024-08-29 03:27:23 [http-nio-8080-exec-3] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:27:23 [http-nio-8080-exec-3] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:27:33 [http-nio-8080-exec-2] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:27:33 [http-nio-8080-exec-2] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:27:33 [http-nio-8080-exec-7] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:27:33 [http-nio-8080-exec-7] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:27:34 [http-nio-8080-exec-4] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:27:34 [http-nio-8080-exec-4] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:27:35 [http-nio-8080-exec-5] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:27:35 [http-nio-8080-exec-5] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:27:36 [http-nio-8080-exec-9] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:27:36 [http-nio-8080-exec-9] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:27:36 [http-nio-8080-exec-8] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:27:39 [http-nio-8080-exec-10] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:27:39 [http-nio-8080-exec-7] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:27:44 [http-nio-8080-exec-5] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:27:45 [http-nio-8080-exec-1] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:27:48 [http-nio-8080-exec-10] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:27:48 [http-nio-8080-exec-10] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:27:48 [http-nio-8080-exec-7] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:27:48 [http-nio-8080-exec-7] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:30:07 [http-nio-8080-exec-9] INFO  c.t.app.controller.AuthController - User login with username: shankar@29
+2024-08-29 03:30:07 [http-nio-8080-exec-9] INFO  c.t.app.service.AuthServiceImpl - Attempting login for username: shankar@29
+2024-08-29 03:30:08 [http-nio-8080-exec-9] ERROR c.t.a.e.GlobalExceptionHandler - Bad credentials
+2024-08-29 03:30:08 [http-nio-8080-exec-9] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2024-08-29 03:30:15 [http-nio-8080-exec-8] INFO  c.t.app.controller.AuthController - User login with username: shankar@29
+2024-08-29 03:30:15 [http-nio-8080-exec-8] INFO  c.t.app.service.AuthServiceImpl - Attempting login for username: shankar@29
+2024-08-29 03:30:15 [http-nio-8080-exec-8] INFO  c.t.app.service.AuthServiceImpl - Login successful for username: shankar@29
+2024-08-29 03:31:09 [http-nio-8080-exec-3] ERROR c.t.a.e.GlobalExceptionHandler - No static resource api/accounts/-1.
+2024-08-29 03:31:09 [http-nio-8080-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/accounts/-1.]
+2024-08-29 03:31:25 [http-nio-8080-exec-8] ERROR c.t.a.e.GlobalExceptionHandler - No static resource api/accounts/-1.
+2024-08-29 03:31:25 [http-nio-8080-exec-8] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/accounts/-1.]
+2024-08-29 03:31:31 [http-nio-8080-exec-10] ERROR c.t.a.e.GlobalExceptionHandler - No static resource api/accounts/-1.
+2024-08-29 03:31:31 [http-nio-8080-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/accounts/-1.]
+2024-08-29 03:38:16 [http-nio-8080-exec-8] INFO  c.t.app.controller.AuthController - User login with username: soumya@29
+2024-08-29 03:38:16 [http-nio-8080-exec-8] INFO  c.t.app.service.AuthServiceImpl - Attempting login for username: soumya@29
+2024-08-29 03:38:16 [http-nio-8080-exec-8] INFO  c.t.app.service.AuthServiceImpl - Login successful for username: soumya@29
+2024-08-29 03:38:16 [http-nio-8080-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+com.techlabs.app.exception.APIException: Invalid JWT token
+	at com.techlabs.app.security.JwtTokenProvider.validateToken(JwtTokenProvider.java:65)
+	at com.techlabs.app.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:33)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-08-29 03:38:16 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+com.techlabs.app.exception.APIException: Invalid JWT token
+	at com.techlabs.app.security.JwtTokenProvider.validateToken(JwtTokenProvider.java:65)
+	at com.techlabs.app.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:33)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-08-29 03:38:23 [http-nio-8080-exec-10] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:38:23 [http-nio-8080-exec-10] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:38:23 [http-nio-8080-exec-5] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:38:23 [http-nio-8080-exec-5] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:38:30 [http-nio-8080-exec-7] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:38:30 [http-nio-8080-exec-7] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:39:15 [http-nio-8080-exec-1] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:39:15 [http-nio-8080-exec-1] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:39:16 [http-nio-8080-exec-9] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:39:16 [http-nio-8080-exec-9] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:39:46 [http-nio-8080-exec-10] INFO  c.t.a.c.TransactionController - Making a transaction from account 9 to account 10 for amount 2.0
+2024-08-29 03:39:46 [http-nio-8080-exec-10] INFO  c.t.a.service.TransactionServiceImpl - Making transaction from sender account: 9 to receiver account: 10 with amount: 2.0
+2024-08-29 03:39:46 [http-nio-8080-exec-10] INFO  c.t.a.service.TransactionServiceImpl - Transaction from account: 9 to account: 10 completed successfully
+2024-08-29 03:39:47 [http-nio-8080-exec-4] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:39:47 [http-nio-8080-exec-4] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:39:53 [http-nio-8080-exec-8] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:39:53 [http-nio-8080-exec-8] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:39:53 [http-nio-8080-exec-6] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:39:59 [http-nio-8080-exec-10] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:40:17 [http-nio-8080-exec-7] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=2024-08-29, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:40:17 [http-nio-8080-exec-1] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=2024-08-29, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:40:38 [http-nio-8080-exec-9] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=2024-08-29, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:40:39 [http-nio-8080-exec-10] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=2024-08-29, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:40:39 [http-nio-8080-exec-5] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=2024-08-29, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:40:40 [http-nio-8080-exec-4] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=2024-08-29, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:40:40 [http-nio-8080-exec-1] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=2024-08-29, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:40:40 [http-nio-8080-exec-7] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=2024-08-29, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:40:40 [http-nio-8080-exec-3] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=2024-08-29, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:40:40 [http-nio-8080-exec-9] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=2024-08-29, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:40:41 [http-nio-8080-exec-8] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=2024-08-29, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:40:41 [http-nio-8080-exec-6] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=2024-08-29, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:40:41 [http-nio-8080-exec-2] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=2024-08-29, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:40:41 [http-nio-8080-exec-10] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=2024-08-29, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:40:42 [http-nio-8080-exec-5] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=2024-08-29, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:40:42 [http-nio-8080-exec-4] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=2024-08-29, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:40:42 [http-nio-8080-exec-1] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=2024-08-29, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:40:42 [http-nio-8080-exec-7] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=2024-08-29, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:40:42 [http-nio-8080-exec-3] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=2024-08-29, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:40:42 [http-nio-8080-exec-9] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=2024-08-29, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:40:43 [http-nio-8080-exec-8] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=2024-08-29, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:40:43 [http-nio-8080-exec-2] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=2024-08-29, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:40:43 [http-nio-8080-exec-10] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=2024-08-29, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:40:43 [http-nio-8080-exec-5] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=2024-08-29, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:40:43 [http-nio-8080-exec-4] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=2024-08-29, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:40:45 [http-nio-8080-exec-7] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:40:45 [http-nio-8080-exec-3] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:40:48 [http-nio-8080-exec-8] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:40:48 [http-nio-8080-exec-2] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:40:49 [http-nio-8080-exec-5] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:40:53 [http-nio-8080-exec-7] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:40:53 [http-nio-8080-exec-3] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:40:53 [http-nio-8080-exec-7] ERROR c.t.a.e.GlobalExceptionHandler - fromIndex(15) > toIndex(0)
+2024-08-29 03:40:53 [http-nio-8080-exec-7] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.IllegalArgumentException: fromIndex(15) > toIndex(0)]
+2024-08-29 03:40:58 [http-nio-8080-exec-8] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:41:05 [http-nio-8080-exec-10] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:41:05 [http-nio-8080-exec-5] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:41:08 [http-nio-8080-exec-1] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:41:12 [http-nio-8080-exec-2] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=9, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:41:12 [http-nio-8080-exec-6] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=9, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:41:16 [http-nio-8080-exec-10] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=9, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:41:17 [http-nio-8080-exec-4] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=9, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:41:18 [http-nio-8080-exec-7] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=9, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:41:19 [http-nio-8080-exec-2] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=9, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:41:38 [http-nio-8080-exec-1] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=9, startDate=null, endDate=2024-08-29, minAmount=null, maxAmount=null
+2024-08-29 03:41:38 [http-nio-8080-exec-4] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=9, startDate=null, endDate=2024-08-29, minAmount=null, maxAmount=null
+2024-08-29 03:41:44 [http-nio-8080-exec-8] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=9, startDate=null, endDate=2024-08-29, minAmount=null, maxAmount=null
+2024-08-29 03:41:45 [http-nio-8080-exec-6] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=9, startDate=null, endDate=2024-08-29, minAmount=null, maxAmount=null
+2024-08-29 03:41:45 [http-nio-8080-exec-5] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=9, startDate=null, endDate=2024-08-29, minAmount=null, maxAmount=null
+2024-08-29 03:41:46 [http-nio-8080-exec-4] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=9, startDate=null, endDate=2024-08-29, minAmount=null, maxAmount=null
+2024-08-29 03:41:48 [http-nio-8080-exec-7] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=9, startDate=null, endDate=2024-08-29, minAmount=null, maxAmount=null
+2024-08-29 03:41:49 [http-nio-8080-exec-3] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=9, startDate=null, endDate=2024-08-29, minAmount=null, maxAmount=null
+2024-08-29 03:41:49 [http-nio-8080-exec-2] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=9, startDate=null, endDate=2024-08-29, minAmount=null, maxAmount=null
+2024-08-29 03:41:50 [http-nio-8080-exec-10] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=9, startDate=null, endDate=2024-08-29, minAmount=null, maxAmount=null
+2024-08-29 03:42:10 [http-nio-8080-exec-3] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:42:10 [http-nio-8080-exec-3] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:42:10 [http-nio-8080-exec-9] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=9, startDate=null, endDate=2024-08-29, minAmount=null, maxAmount=null
+2024-08-29 03:42:22 [http-nio-8080-exec-2] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=9, startDate=2024-08-26, endDate=2024-08-29, minAmount=null, maxAmount=null
+2024-08-29 03:42:32 [http-nio-8080-exec-10] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=9, startDate=2024-08-26, endDate=2024-08-29, minAmount=null, maxAmount=null
+2024-08-29 03:42:33 [http-nio-8080-exec-4] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=9, startDate=2024-08-26, endDate=2024-08-29, minAmount=null, maxAmount=null
+2024-08-29 03:42:34 [http-nio-8080-exec-7] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=9, startDate=2024-08-26, endDate=2024-08-29, minAmount=null, maxAmount=null
+2024-08-29 03:42:36 [http-nio-8080-exec-3] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=9, startDate=2024-08-26, endDate=2024-08-29, minAmount=null, maxAmount=null
+2024-08-29 03:42:37 [http-nio-8080-exec-8] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=9, startDate=2024-08-26, endDate=2024-08-29, minAmount=null, maxAmount=null
+2024-08-29 03:42:38 [http-nio-8080-exec-6] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=9, startDate=2024-08-26, endDate=2024-08-29, minAmount=null, maxAmount=null
+2024-08-29 03:42:43 [http-nio-8080-exec-5] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=9, startDate=2024-08-26, endDate=2024-08-29, minAmount=null, maxAmount=null
+2024-08-29 03:42:44 [http-nio-8080-exec-1] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=9, startDate=2024-08-26, endDate=2024-08-29, minAmount=null, maxAmount=null
+2024-08-29 03:42:51 [http-nio-8080-exec-3] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=9, startDate=2024-08-26, endDate=2024-08-29, minAmount=null, maxAmount=null
+2024-08-29 03:42:53 [http-nio-8080-exec-8] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=9, startDate=2024-08-26, endDate=2024-08-29, minAmount=null, maxAmount=null
+2024-08-29 03:43:07 [http-nio-8080-exec-6] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=9, startDate=2024-08-26, endDate=2024-08-29, minAmount=null, maxAmount=null
+2024-08-29 03:43:10 [http-nio-8080-exec-5] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:43:10 [http-nio-8080-exec-1] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:43:11 [http-nio-8080-exec-2] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:43:11 [http-nio-8080-exec-2] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:43:11 [http-nio-8080-exec-10] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:43:11 [http-nio-8080-exec-10] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:43:14 [http-nio-8080-exec-4] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:43:14 [http-nio-8080-exec-4] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:43:18 [http-nio-8080-exec-1] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:43:18 [http-nio-8080-exec-1] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:45:33 [http-nio-8080-exec-4] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:45:33 [http-nio-8080-exec-4] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:45:33 [http-nio-8080-exec-5] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:45:33 [http-nio-8080-exec-5] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:45:35 [http-nio-8080-exec-8] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:45:35 [http-nio-8080-exec-8] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:45:35 [http-nio-8080-exec-6] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:45:35 [http-nio-8080-exec-6] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:45:36 [http-nio-8080-exec-2] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:45:36 [http-nio-8080-exec-2] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:45:54 [http-nio-8080-exec-4] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:45:54 [http-nio-8080-exec-4] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:46:56 [http-nio-8080-exec-3] INFO  c.t.app.controller.AuthController - User login with username: shankar@29
+2024-08-29 03:46:56 [http-nio-8080-exec-3] INFO  c.t.app.service.AuthServiceImpl - Attempting login for username: shankar@29
+2024-08-29 03:46:57 [http-nio-8080-exec-3] INFO  c.t.app.service.AuthServiceImpl - Login successful for username: shankar@29
+2024-08-29 03:48:11 [http-nio-8080-exec-6] INFO  c.t.app.controller.BankController - Searching banks with criteria - bankId: null, fullName: , abbreviation: , active: null
+2024-08-29 03:55:30 [http-nio-8080-exec-6] INFO  c.t.app.controller.AuthController - User login with username: shankar@29
+2024-08-29 03:55:30 [http-nio-8080-exec-6] INFO  c.t.app.service.AuthServiceImpl - Attempting login for username: shankar@29
+2024-08-29 03:55:30 [http-nio-8080-exec-6] INFO  c.t.app.service.AuthServiceImpl - Login successful for username: shankar@29
+2024-08-29 03:55:48 [http-nio-8080-exec-1] INFO  c.t.app.controller.AuthController - User login with username: soumya@29
+2024-08-29 03:55:48 [http-nio-8080-exec-1] INFO  c.t.app.service.AuthServiceImpl - Attempting login for username: soumya@29
+2024-08-29 03:55:48 [http-nio-8080-exec-1] INFO  c.t.app.service.AuthServiceImpl - Login successful for username: soumya@29
+2024-08-29 03:55:48 [http-nio-8080-exec-2] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:55:48 [http-nio-8080-exec-2] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:55:48 [http-nio-8080-exec-4] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:55:48 [http-nio-8080-exec-4] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:55:54 [http-nio-8080-exec-5] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:55:54 [http-nio-8080-exec-5] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:57:41 [http-nio-8080-exec-8] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:57:41 [http-nio-8080-exec-8] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:58:14 [http-nio-8080-exec-4] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:58:14 [http-nio-8080-exec-4] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:58:15 [http-nio-8080-exec-10] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:58:15 [http-nio-8080-exec-10] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:58:21 [http-nio-8080-exec-6] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:58:21 [http-nio-8080-exec-6] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:58:21 [http-nio-8080-exec-8] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:58:21 [http-nio-8080-exec-8] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:58:23 [http-nio-8080-exec-9] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:58:23 [http-nio-8080-exec-9] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:59:00 [http-nio-8080-exec-4] INFO  c.t.app.controller.AccountController - Fetching account with account number: 12
+2024-08-29 03:59:00 [http-nio-8080-exec-4] INFO  c.t.app.service.AccountServiceImpl - Fetching account with account number: 12
+2024-08-29 03:59:00 [http-nio-8080-exec-5] INFO  c.t.a.c.TransactionController - Making a transaction from account 9 to account 12 for amount 33.0
+2024-08-29 03:59:00 [http-nio-8080-exec-5] INFO  c.t.a.service.TransactionServiceImpl - Making transaction from sender account: 9 to receiver account: 12 with amount: 33.0
+2024-08-29 03:59:00 [http-nio-8080-exec-5] INFO  c.t.a.service.TransactionServiceImpl - Transaction from account: 9 to account: 12 completed successfully
+2024-08-29 03:59:00 [http-nio-8080-exec-1] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:59:00 [http-nio-8080-exec-1] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:59:04 [http-nio-8080-exec-9] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 03:59:04 [http-nio-8080-exec-9] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 03:59:04 [http-nio-8080-exec-2] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:59:08 [http-nio-8080-exec-10] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:59:10 [http-nio-8080-exec-7] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:59:10 [http-nio-8080-exec-3] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:59:11 [http-nio-8080-exec-8] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:59:17 [http-nio-8080-exec-2] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:59:24 [http-nio-8080-exec-10] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:59:25 [http-nio-8080-exec-7] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:59:25 [http-nio-8080-exec-3] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:59:27 [http-nio-8080-exec-6] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:59:28 [http-nio-8080-exec-8] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:59:30 [http-nio-8080-exec-2] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:59:31 [http-nio-8080-exec-10] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:59:35 [http-nio-8080-exec-7] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:59:35 [http-nio-8080-exec-7] ERROR c.t.a.e.GlobalExceptionHandler - fromIndex(60) > toIndex(24)
+2024-08-29 03:59:35 [http-nio-8080-exec-7] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.IllegalArgumentException: fromIndex(60) > toIndex(24)]
+2024-08-29 03:59:37 [http-nio-8080-exec-3] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:59:37 [http-nio-8080-exec-3] ERROR c.t.a.e.GlobalExceptionHandler - fromIndex(45) > toIndex(24)
+2024-08-29 03:59:37 [http-nio-8080-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.IllegalArgumentException: fromIndex(45) > toIndex(24)]
+2024-08-29 03:59:37 [http-nio-8080-exec-8] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:59:37 [http-nio-8080-exec-8] ERROR c.t.a.e.GlobalExceptionHandler - fromIndex(30) > toIndex(24)
+2024-08-29 03:59:37 [http-nio-8080-exec-8] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.IllegalArgumentException: fromIndex(30) > toIndex(24)]
+2024-08-29 03:59:37 [http-nio-8080-exec-2] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:59:39 [http-nio-8080-exec-10] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:59:47 [http-nio-8080-exec-7] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:59:50 [http-nio-8080-exec-3] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:59:56 [http-nio-8080-exec-8] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 03:59:58 [http-nio-8080-exec-2] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 04:00:51 [http-nio-8080-exec-3] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 04:00:51 [http-nio-8080-exec-3] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 04:00:51 [http-nio-8080-exec-6] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 04:00:51 [http-nio-8080-exec-6] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 04:01:11 [http-nio-8080-exec-10] INFO  c.t.app.controller.AuthController - User login with username: shankar@29
+2024-08-29 04:01:11 [http-nio-8080-exec-10] INFO  c.t.app.service.AuthServiceImpl - Attempting login for username: shankar@29
+2024-08-29 04:01:11 [http-nio-8080-exec-10] INFO  c.t.app.service.AuthServiceImpl - Login successful for username: shankar@29
+2024-08-29 04:07:26 [http-nio-8080-exec-7] INFO  c.t.app.controller.AuthController - User registration with role: ROLE_CUSTOMER
+2024-08-29 04:07:26 [http-nio-8080-exec-7] INFO  c.t.app.service.AuthServiceImpl - Attempting registration for username: nityam@29 with role: ROLE_CUSTOMER
+2024-08-29 04:07:26 [http-nio-8080-exec-7] INFO  c.t.app.service.AuthServiceImpl - Registration successful for Customer with username: nityam@29
+2024-08-29 04:07:53 [http-nio-8080-exec-3] INFO  c.t.app.controller.AuthController - User login with username: shankar@29
+2024-08-29 04:07:53 [http-nio-8080-exec-3] INFO  c.t.app.service.AuthServiceImpl - Attempting login for username: shankar@29
+2024-08-29 04:07:53 [http-nio-8080-exec-3] INFO  c.t.app.service.AuthServiceImpl - Login successful for username: shankar@29
+2024-08-29 04:08:18 [http-nio-8080-exec-4] INFO  c.t.app.controller.AuthController - User login with username: shankar@29
+2024-08-29 04:08:18 [http-nio-8080-exec-4] INFO  c.t.app.service.AuthServiceImpl - Attempting login for username: shankar@29
+2024-08-29 04:08:18 [http-nio-8080-exec-4] INFO  c.t.app.service.AuthServiceImpl - Login successful for username: shankar@29
+2024-08-29 04:11:06 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29 04:11:06 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-08-29 04:11:06 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-08-29 13:06:47 [restartedMain] INFO  com.techlabs.app.Application - Starting Application using Java 21.0.2 with PID 15752 (C:\Users\ACER\Documents\MonoJava\Spring\Spring-Core\Bank-Application\target\classes started by ACER in C:\Users\ACER\Documents\MonoJava\Spring\Spring-Core)
+2024-08-29 13:06:47 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-08-29 13:06:47 [restartedMain] INFO  com.techlabs.app.Application - No active profile set, falling back to 1 default profile: "default"
+2024-08-29 13:06:47 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-29 13:06:47 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-29 13:06:49 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-29 13:06:50 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 121 ms. Found 8 JPA repository interfaces.
+2024-08-29 13:06:51 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-29 13:06:51 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-29 13:06:51 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-29 13:06:51 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-29 13:06:51 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-29 13:06:51 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4073 ms
+2024-08-29 13:06:52 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-29 13:06:52 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-29 13:06:52 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-29 13:06:53 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-29 13:06:53 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-29 13:06:54 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@9b74def
+2024-08-29 13:06:54 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-29 13:06:56 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-29 13:06:56 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29 13:06:57 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-08-29 13:06:59 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-08-29 13:06:59 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-29 13:07:00 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-08-29 13:07:00 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-08-29 13:07:00 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-08-29 13:07:00 [restartedMain] INFO  com.techlabs.app.Application - Started Application in 14.504 seconds (process running for 15.978)
+2024-08-29 13:07:47 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-29 13:07:47 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-29 13:07:47 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2024-08-29 13:07:48 [http-nio-8080-exec-2] INFO  c.t.app.controller.AuthController - User login with username: shankar@29
+2024-08-29 13:07:48 [http-nio-8080-exec-2] INFO  c.t.app.service.AuthServiceImpl - Attempting login for username: shankar@29
+2024-08-29 13:07:48 [http-nio-8080-exec-2] INFO  c.t.app.service.AuthServiceImpl - Login successful for username: shankar@29
+2024-08-29 13:07:53 [http-nio-8080-exec-9] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+com.techlabs.app.exception.APIException: Invalid JWT token
+	at com.techlabs.app.security.JwtTokenProvider.validateToken(JwtTokenProvider.java:65)
+	at com.techlabs.app.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:33)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-08-29 13:08:41 [http-nio-8080-exec-4] ERROR c.t.a.e.GlobalExceptionHandler - No Customers Found
+2024-08-29 13:08:41 [http-nio-8080-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.techlabs.app.exception.CustomerRelatedException: No Customers Found]
+2024-08-29 13:08:54 [http-nio-8080-exec-5] ERROR c.t.a.e.GlobalExceptionHandler - No Customers Found
+2024-08-29 13:08:54 [http-nio-8080-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.techlabs.app.exception.CustomerRelatedException: No Customers Found]
+2024-08-29 13:09:04 [http-nio-8080-exec-1] ERROR c.t.a.e.GlobalExceptionHandler - No Customers Found
+2024-08-29 13:09:04 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.techlabs.app.exception.CustomerRelatedException: No Customers Found]
+2024-08-29 13:09:07 [http-nio-8080-exec-4] ERROR c.t.a.e.GlobalExceptionHandler - No Customers Found
+2024-08-29 13:09:07 [http-nio-8080-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.techlabs.app.exception.CustomerRelatedException: No Customers Found]
+2024-08-29 13:09:08 [http-nio-8080-exec-3] ERROR c.t.a.e.GlobalExceptionHandler - No Customers Found
+2024-08-29 13:09:08 [http-nio-8080-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.techlabs.app.exception.CustomerRelatedException: No Customers Found]
+2024-08-29 13:09:09 [http-nio-8080-exec-6] ERROR c.t.a.e.GlobalExceptionHandler - No Customers Found
+2024-08-29 13:09:09 [http-nio-8080-exec-6] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.techlabs.app.exception.CustomerRelatedException: No Customers Found]
+2024-08-29 13:09:09 [http-nio-8080-exec-9] ERROR c.t.a.e.GlobalExceptionHandler - No Customers Found
+2024-08-29 13:09:09 [http-nio-8080-exec-9] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.techlabs.app.exception.CustomerRelatedException: No Customers Found]
+2024-08-29 13:11:52 [http-nio-8080-exec-5] ERROR c.t.a.e.GlobalExceptionHandler - No accounts found for the given criteria.
+2024-08-29 13:11:52 [http-nio-8080-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.techlabs.app.exception.AccountRelatedException: No accounts found for the given criteria.]
+2024-08-29 13:11:55 [http-nio-8080-exec-8] ERROR c.t.a.e.GlobalExceptionHandler - No accounts found for the given criteria.
+2024-08-29 13:11:55 [http-nio-8080-exec-8] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.techlabs.app.exception.AccountRelatedException: No accounts found for the given criteria.]
+2024-08-29 13:11:56 [http-nio-8080-exec-9] ERROR c.t.a.e.GlobalExceptionHandler - No accounts found for the given criteria.
+2024-08-29 13:11:56 [http-nio-8080-exec-9] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.techlabs.app.exception.AccountRelatedException: No accounts found for the given criteria.]
+2024-08-29 13:12:07 [http-nio-8080-exec-2] ERROR c.t.a.e.GlobalExceptionHandler - No accounts found for the given criteria.
+2024-08-29 13:12:07 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.techlabs.app.exception.AccountRelatedException: No accounts found for the given criteria.]
+2024-08-29 13:13:03 [http-nio-8080-exec-6] ERROR c.t.a.e.GlobalExceptionHandler - No accounts found for the given criteria.
+2024-08-29 13:13:03 [http-nio-8080-exec-6] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.techlabs.app.exception.AccountRelatedException: No accounts found for the given criteria.]
+2024-08-29 13:27:00 [http-nio-8080-exec-4] ERROR c.t.a.e.GlobalExceptionHandler - No accounts found for the given criteria.
+2024-08-29 13:27:00 [http-nio-8080-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.techlabs.app.exception.AccountRelatedException: No accounts found for the given criteria.]
+2024-08-29 13:27:30 [http-nio-8080-exec-6] INFO  c.t.app.controller.AccountController - Fetching All The Accounts
+2024-08-29 13:27:30 [http-nio-8080-exec-8] INFO  c.t.app.controller.AccountController - Fetching All The Accounts
+2024-08-29 13:34:15 [http-nio-8080-exec-3] INFO  c.t.a.controller.CustomerController - Fetching All The Customers
+2024-08-29 13:34:15 [http-nio-8080-exec-3] INFO  c.t.app.service.CustomerServiceImpl - Fetching all customers
+2024-08-29 13:45:22 [http-nio-8080-exec-8] INFO  c.t.a.controller.CustomerController - Activating customer
+2024-08-29 13:45:22 [http-nio-8080-exec-8] INFO  c.t.app.service.CustomerServiceImpl - Activating customer with ID: 9
+2024-08-29 13:45:22 [http-nio-8080-exec-8] INFO  c.t.app.service.CustomerServiceImpl - Customer with ID: 9 activated successfully
+2024-08-29 13:45:23 [http-nio-8080-exec-6] INFO  c.t.a.controller.CustomerController - Deleting customer with ID: 9
+2024-08-29 13:45:23 [http-nio-8080-exec-6] INFO  c.t.app.service.CustomerServiceImpl - Deleting customer with ID: 9
+2024-08-29 13:45:23 [http-nio-8080-exec-6] INFO  c.t.app.service.CustomerServiceImpl - Customer with ID: 9 deleted successfully
+2024-08-29 13:48:35 [http-nio-8080-exec-10] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 2
+2024-08-29 13:48:35 [http-nio-8080-exec-10] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 2
+2024-08-29 13:48:35 [http-nio-8080-exec-4] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 2
+2024-08-29 13:48:35 [http-nio-8080-exec-4] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 2
+2024-08-29 13:48:40 [http-nio-8080-exec-5] INFO  c.t.a.controller.CustomerController - Updating customer details
+2024-08-29 13:48:40 [http-nio-8080-exec-5] INFO  c.t.app.service.CustomerServiceImpl - Updating customer with ID: 2
+2024-08-29 13:48:40 [http-nio-8080-exec-5] INFO  c.t.app.service.CustomerServiceImpl - Customer with ID: 2 updated successfully
+2024-08-29 13:48:40 [http-nio-8080-exec-8] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 2
+2024-08-29 13:48:40 [http-nio-8080-exec-8] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 2
+2024-08-29 13:49:20 [http-nio-8080-exec-9] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 2
+2024-08-29 13:49:20 [http-nio-8080-exec-9] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 2
+2024-08-29 13:49:20 [http-nio-8080-exec-2] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 2
+2024-08-29 13:49:20 [http-nio-8080-exec-2] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 2
+2024-08-29 13:49:22 [http-nio-8080-exec-4] INFO  c.t.a.controller.CustomerController - Updating customer details
+2024-08-29 13:49:22 [http-nio-8080-exec-4] INFO  c.t.app.service.CustomerServiceImpl - Updating customer with ID: 2
+2024-08-29 13:49:22 [http-nio-8080-exec-4] INFO  c.t.app.service.CustomerServiceImpl - Customer with ID: 2 updated successfully
+2024-08-29 13:49:22 [http-nio-8080-exec-7] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 2
+2024-08-29 13:49:22 [http-nio-8080-exec-7] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 2
+2024-08-29 13:49:22 [http-nio-8080-exec-8] INFO  c.t.a.controller.CustomerController - Fetching All The Customers
+2024-08-29 13:49:22 [http-nio-8080-exec-8] INFO  c.t.app.service.CustomerServiceImpl - Fetching all customers
+2024-08-29 13:49:22 [http-nio-8080-exec-6] INFO  c.t.a.controller.CustomerController - Fetching All The Customers
+2024-08-29 13:49:22 [http-nio-8080-exec-6] INFO  c.t.app.service.CustomerServiceImpl - Fetching all customers
+2024-08-29 13:49:25 [http-nio-8080-exec-9] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 2
+2024-08-29 13:49:25 [http-nio-8080-exec-9] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 2
+2024-08-29 13:49:25 [http-nio-8080-exec-2] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 2
+2024-08-29 13:49:25 [http-nio-8080-exec-2] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 2
+2024-08-29 13:49:29 [http-nio-8080-exec-4] INFO  c.t.a.controller.CustomerController - Updating customer details
+2024-08-29 13:49:29 [http-nio-8080-exec-4] INFO  c.t.app.service.CustomerServiceImpl - Updating customer with ID: 2
+2024-08-29 13:49:29 [http-nio-8080-exec-4] INFO  c.t.app.service.CustomerServiceImpl - Customer with ID: 2 updated successfully
+2024-08-29 13:49:29 [http-nio-8080-exec-7] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 2
+2024-08-29 13:49:29 [http-nio-8080-exec-7] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 2
+2024-08-29 13:49:29 [http-nio-8080-exec-8] INFO  c.t.a.controller.CustomerController - Fetching All The Customers
+2024-08-29 13:49:29 [http-nio-8080-exec-8] INFO  c.t.app.service.CustomerServiceImpl - Fetching all customers
+2024-08-29 13:49:37 [http-nio-8080-exec-9] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 2
+2024-08-29 13:49:37 [http-nio-8080-exec-9] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 2
+2024-08-29 13:49:37 [http-nio-8080-exec-2] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 2
+2024-08-29 13:49:37 [http-nio-8080-exec-2] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 2
+2024-08-29 13:49:50 [http-nio-8080-exec-4] INFO  c.t.a.controller.CustomerController - Updating customer details
+2024-08-29 13:49:50 [http-nio-8080-exec-4] INFO  c.t.app.service.CustomerServiceImpl - Updating customer with ID: 2
+2024-08-29 13:49:50 [http-nio-8080-exec-4] INFO  c.t.app.service.CustomerServiceImpl - Customer with ID: 2 updated successfully
+2024-08-29 13:49:50 [http-nio-8080-exec-5] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 2
+2024-08-29 13:49:50 [http-nio-8080-exec-5] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 2
+2024-08-29 13:49:50 [http-nio-8080-exec-6] INFO  c.t.a.controller.CustomerController - Fetching All The Customers
+2024-08-29 13:49:50 [http-nio-8080-exec-6] INFO  c.t.app.service.CustomerServiceImpl - Fetching all customers
+2024-08-29 13:49:58 [http-nio-8080-exec-3] INFO  c.t.app.controller.BankController - Searching banks with criteria - bankId: null, fullName: , abbreviation: , active: null
+2024-08-29 13:50:00 [http-nio-8080-exec-7] INFO  c.t.app.controller.BankController - Fetching bank with ID: 1
+2024-08-29 13:50:00 [http-nio-8080-exec-7] INFO  c.t.app.service.BankServiceImpl - Fetching bank with ID: 1
+2024-08-29 13:50:01 [http-nio-8080-exec-8] INFO  c.t.app.controller.BankController - Fetching bank with ID: 1
+2024-08-29 13:50:01 [http-nio-8080-exec-8] INFO  c.t.app.service.BankServiceImpl - Fetching bank with ID: 1
+2024-08-29 13:50:04 [http-nio-8080-exec-9] INFO  c.t.app.controller.BankController - Updating bank details
+2024-08-29 13:50:04 [http-nio-8080-exec-9] INFO  c.t.app.service.BankServiceImpl - Updating bank with ID: 1
+2024-08-29 13:50:04 [http-nio-8080-exec-9] INFO  c.t.app.service.BankServiceImpl - Bank with ID: 1 updated successfully
+2024-08-29 13:50:04 [http-nio-8080-exec-10] INFO  c.t.app.controller.BankController - Fetching bank with ID: 1
+2024-08-29 13:50:04 [http-nio-8080-exec-10] INFO  c.t.app.service.BankServiceImpl - Fetching bank with ID: 1
+2024-08-29 13:50:07 [http-nio-8080-exec-1] INFO  c.t.app.controller.BankController - Fetching bank with ID: 1
+2024-08-29 13:50:07 [http-nio-8080-exec-1] INFO  c.t.app.service.BankServiceImpl - Fetching bank with ID: 1
+2024-08-29 13:50:07 [http-nio-8080-exec-7] INFO  c.t.app.controller.BankController - Fetching bank with ID: 1
+2024-08-29 13:50:07 [http-nio-8080-exec-7] INFO  c.t.app.service.BankServiceImpl - Fetching bank with ID: 1
+2024-08-29 13:50:09 [http-nio-8080-exec-5] INFO  c.t.app.controller.BankController - Updating bank details
+2024-08-29 13:50:09 [http-nio-8080-exec-5] INFO  c.t.app.service.BankServiceImpl - Updating bank with ID: 1
+2024-08-29 13:50:09 [http-nio-8080-exec-5] INFO  c.t.app.service.BankServiceImpl - Bank with ID: 1 updated successfully
+2024-08-29 13:50:09 [http-nio-8080-exec-8] INFO  c.t.app.controller.BankController - Fetching bank with ID: 1
+2024-08-29 13:50:09 [http-nio-8080-exec-8] INFO  c.t.app.service.BankServiceImpl - Fetching bank with ID: 1
+2024-08-29 13:50:36 [http-nio-8080-exec-6] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 12
+2024-08-29 13:50:36 [http-nio-8080-exec-6] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 12
+2024-08-29 13:50:36 [http-nio-8080-exec-10] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 12
+2024-08-29 13:50:36 [http-nio-8080-exec-10] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 12
+2024-08-29 13:50:41 [http-nio-8080-exec-3] INFO  c.t.a.controller.CustomerController - Updating customer details
+2024-08-29 13:50:41 [http-nio-8080-exec-3] INFO  c.t.app.service.CustomerServiceImpl - Updating customer with ID: 12
+2024-08-29 13:50:41 [http-nio-8080-exec-3] INFO  c.t.app.service.CustomerServiceImpl - Customer with ID: 12 updated successfully
+2024-08-29 13:50:41 [http-nio-8080-exec-4] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 12
+2024-08-29 13:50:41 [http-nio-8080-exec-4] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 12
+2024-08-29 13:50:41 [http-nio-8080-exec-5] INFO  c.t.a.controller.CustomerController - Fetching All The Customers
+2024-08-29 13:50:41 [http-nio-8080-exec-5] INFO  c.t.app.service.CustomerServiceImpl - Fetching all customers
+2024-08-29 13:50:41 [http-nio-8080-exec-8] INFO  c.t.a.controller.CustomerController - Fetching All The Customers
+2024-08-29 13:50:41 [http-nio-8080-exec-8] INFO  c.t.app.service.CustomerServiceImpl - Fetching all customers
+2024-08-29 13:50:46 [http-nio-8080-exec-9] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 12
+2024-08-29 13:50:46 [http-nio-8080-exec-9] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 12
+2024-08-29 13:50:46 [http-nio-8080-exec-1] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 12
+2024-08-29 13:50:46 [http-nio-8080-exec-1] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 12
+2024-08-29 13:50:49 [http-nio-8080-exec-4] INFO  c.t.a.controller.CustomerController - Updating customer details
+2024-08-29 13:50:49 [http-nio-8080-exec-4] INFO  c.t.app.service.CustomerServiceImpl - Updating customer with ID: 12
+2024-08-29 13:50:49 [http-nio-8080-exec-4] INFO  c.t.app.service.CustomerServiceImpl - Customer with ID: 12 updated successfully
+2024-08-29 13:50:49 [http-nio-8080-exec-7] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 12
+2024-08-29 13:50:49 [http-nio-8080-exec-7] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 12
+2024-08-29 13:50:49 [http-nio-8080-exec-8] INFO  c.t.a.controller.CustomerController - Fetching All The Customers
+2024-08-29 13:50:49 [http-nio-8080-exec-8] INFO  c.t.app.service.CustomerServiceImpl - Fetching all customers
+2024-08-29 14:04:32 [http-nio-8080-exec-8] INFO  c.t.app.controller.BankController - Searching banks with criteria - bankId: null, fullName: , abbreviation: , active: null
+2024-08-29 14:04:34 [http-nio-8080-exec-10] INFO  c.t.app.controller.BankController - Searching banks with criteria - bankId: null, fullName: , abbreviation: , active: null
+2024-08-29 14:04:35 [http-nio-8080-exec-6] INFO  c.t.app.controller.BankController - Searching banks with criteria - bankId: null, fullName: , abbreviation: , active: null
+2024-08-29 14:08:16 [http-nio-8080-exec-5] INFO  c.t.app.controller.BankController - Searching banks with criteria - bankId: null, fullName: , abbreviation: , active: null
+2024-08-29 14:08:28 [http-nio-8080-exec-2] INFO  c.t.app.controller.BankController - Searching banks with criteria - bankId: null, fullName: C, abbreviation: , active: null
+2024-08-29 14:08:37 [http-nio-8080-exec-7] INFO  c.t.app.controller.BankController - Searching banks with criteria - bankId: null, fullName: C, abbreviation: , active: null
+2024-08-29 14:08:40 [http-nio-8080-exec-8] INFO  c.t.app.controller.BankController - Getting All Bank Details
+2024-08-29 14:08:40 [http-nio-8080-exec-9] INFO  c.t.app.controller.BankController - Getting All Bank Details
+2024-08-29 14:08:55 [http-nio-8080-exec-6] INFO  c.t.app.controller.BankController - Getting All Bank Details
+2024-08-29 14:09:03 [http-nio-8080-exec-1] INFO  c.t.app.controller.BankController - Searching banks with criteria - bankId: null, fullName: , abbreviation: , active: null
+2024-08-29 14:09:09 [http-nio-8080-exec-8] INFO  c.t.app.controller.BankController - Getting All Bank Details
+2024-08-29 14:09:09 [http-nio-8080-exec-9] INFO  c.t.app.controller.BankController - Getting All Bank Details
+2024-08-29 14:13:03 [http-nio-8080-exec-8] INFO  c.t.app.controller.AuthController - User login with username: soumya@29
+2024-08-29 14:13:03 [http-nio-8080-exec-8] INFO  c.t.app.service.AuthServiceImpl - Attempting login for username: soumya@29
+2024-08-29 14:13:03 [http-nio-8080-exec-8] INFO  c.t.app.service.AuthServiceImpl - Login successful for username: soumya@29
+2024-08-29 14:13:03 [http-nio-8080-exec-4] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 14:13:03 [http-nio-8080-exec-4] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 14:13:03 [http-nio-8080-exec-7] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 14:13:03 [http-nio-8080-exec-7] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 14:13:07 [http-nio-8080-exec-1] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 14:13:07 [http-nio-8080-exec-1] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 14:13:08 [http-nio-8080-exec-10] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 14:13:08 [http-nio-8080-exec-10] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 14:13:08 [http-nio-8080-exec-6] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 14:13:08 [http-nio-8080-exec-6] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 14:13:10 [http-nio-8080-exec-3] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 14:13:10 [http-nio-8080-exec-3] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 14:13:10 [http-nio-8080-exec-1] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 14:13:10 [http-nio-8080-exec-1] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 14:13:10 [http-nio-8080-exec-9] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 14:13:10 [http-nio-8080-exec-9] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 14:13:10 [http-nio-8080-exec-10] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 14:13:12 [http-nio-8080-exec-2] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 14:13:12 [http-nio-8080-exec-2] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 14:13:12 [http-nio-8080-exec-4] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 14:13:12 [http-nio-8080-exec-4] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 14:13:13 [http-nio-8080-exec-8] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 14:13:13 [http-nio-8080-exec-8] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 14:13:13 [http-nio-8080-exec-1] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 14:13:16 [http-nio-8080-exec-2] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 14:13:16 [http-nio-8080-exec-2] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 14:13:16 [http-nio-8080-exec-4] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 14:13:16 [http-nio-8080-exec-4] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 14:13:24 [http-nio-8080-exec-5] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 14:13:24 [http-nio-8080-exec-5] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 14:13:24 [http-nio-8080-exec-10] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 14:13:58 [http-nio-8080-exec-8] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 14:13:58 [http-nio-8080-exec-4] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 14:13:58 [http-nio-8080-exec-8] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 14:14:18 [http-nio-8080-exec-10] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 14:14:18 [http-nio-8080-exec-10] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 14:14:18 [http-nio-8080-exec-9] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 14:15:23 [http-nio-8080-exec-7] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 14:15:23 [http-nio-8080-exec-7] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 14:15:23 [http-nio-8080-exec-5] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 14:15:36 [http-nio-8080-exec-4] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 14:15:36 [http-nio-8080-exec-4] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 14:15:36 [http-nio-8080-exec-1] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 14:15:47 [http-nio-8080-exec-5] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 14:15:47 [http-nio-8080-exec-5] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 14:15:47 [http-nio-8080-exec-3] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 14:16:05 [http-nio-8080-exec-2] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=9, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 14:16:46 [http-nio-8080-exec-3] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 14:16:46 [http-nio-8080-exec-3] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 14:16:46 [http-nio-8080-exec-6] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 14:16:46 [http-nio-8080-exec-6] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 14:16:49 [http-nio-8080-exec-4] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 14:16:49 [http-nio-8080-exec-4] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 14:16:49 [http-nio-8080-exec-1] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 14:16:49 [http-nio-8080-exec-1] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 14:17:02 [http-nio-8080-exec-10] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 14:17:02 [http-nio-8080-exec-10] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 14:17:03 [http-nio-8080-exec-9] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 14:17:03 [http-nio-8080-exec-9] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 14:17:04 [http-nio-8080-exec-7] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 14:17:04 [http-nio-8080-exec-7] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 14:17:05 [http-nio-8080-exec-3] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 14:17:05 [http-nio-8080-exec-3] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 14:17:06 [http-nio-8080-exec-4] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 14:17:06 [http-nio-8080-exec-4] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 14:17:06 [http-nio-8080-exec-1] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 14:17:10 [http-nio-8080-exec-7] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 14:17:10 [http-nio-8080-exec-7] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 14:17:10 [http-nio-8080-exec-3] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 14:17:10 [http-nio-8080-exec-3] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 14:17:11 [http-nio-8080-exec-6] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 14:17:11 [http-nio-8080-exec-6] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 14:17:11 [http-nio-8080-exec-1] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 14:17:27 [http-nio-8080-exec-10] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=10.0
+2024-08-29 14:17:29 [http-nio-8080-exec-7] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=10.0
+2024-08-29 14:17:39 [http-nio-8080-exec-8] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 14:17:39 [http-nio-8080-exec-8] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 14:17:39 [http-nio-8080-exec-1] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=10.0
+2024-08-29 14:17:49 [http-nio-8080-exec-10] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=10.0
+2024-08-29 14:17:51 [http-nio-8080-exec-7] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=10.0
+2024-08-29 14:17:54 [http-nio-8080-exec-3] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=10.0
+2024-08-29 14:17:55 [http-nio-8080-exec-5] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=10.0
+2024-08-29 14:17:57 [http-nio-8080-exec-9] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 14:17:57 [http-nio-8080-exec-9] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 14:17:57 [http-nio-8080-exec-10] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 14:17:57 [http-nio-8080-exec-10] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 14:18:00 [http-nio-8080-exec-7] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 14:18:00 [http-nio-8080-exec-7] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 14:18:00 [http-nio-8080-exec-3] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 14:18:00 [http-nio-8080-exec-3] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 14:18:04 [http-nio-8080-exec-1] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 14:18:04 [http-nio-8080-exec-1] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 14:18:04 [http-nio-8080-exec-9] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 14:18:04 [http-nio-8080-exec-9] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 14:18:37 [http-nio-8080-exec-5] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 14:18:37 [http-nio-8080-exec-5] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 14:18:37 [http-nio-8080-exec-6] INFO  c.t.a.c.TransactionController - Fetching transactions for user soumya@29 with criteria: accountNumber=null, startDate=null, endDate=null, minAmount=null, maxAmount=null
+2024-08-29 14:18:39 [http-nio-8080-exec-8] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 14:18:39 [http-nio-8080-exec-8] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 14:18:39 [http-nio-8080-exec-1] INFO  c.t.a.controller.CustomerController - Fetching customer with ID: 5
+2024-08-29 14:18:39 [http-nio-8080-exec-1] INFO  c.t.app.service.CustomerServiceImpl - Fetching customer with ID: 5
+2024-08-29 14:18:52 [http-nio-8080-exec-10] INFO  c.t.app.controller.AuthController - User login with username: shankar@29
+2024-08-29 14:18:52 [http-nio-8080-exec-10] INFO  c.t.app.service.AuthServiceImpl - Attempting login for username: shankar@29
+2024-08-29 14:18:52 [http-nio-8080-exec-10] INFO  c.t.app.service.AuthServiceImpl - Login successful for username: shankar@29
+2024-08-29 14:19:01 [http-nio-8080-exec-7] INFO  c.t.a.controller.CustomerController - Fetching all active customers with no accounts
+2024-08-29 14:19:01 [http-nio-8080-exec-7] INFO  c.t.app.service.CustomerServiceImpl - Fetching all active customers with no accounts
+2024-08-29 14:34:36 [http-nio-8080-exec-6] ERROR c.t.a.e.GlobalExceptionHandler - No Customers Found
+2024-08-29 14:34:36 [http-nio-8080-exec-6] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.techlabs.app.exception.CustomerRelatedException: No Customers Found]
+2024-08-29 14:34:45 [http-nio-8080-exec-3] ERROR c.t.a.e.GlobalExceptionHandler - No Customers Found
+2024-08-29 14:34:45 [http-nio-8080-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.techlabs.app.exception.CustomerRelatedException: No Customers Found]
+2024-08-29 15:10:06 [http-nio-8080-exec-6] INFO  c.t.app.controller.BankController - Searching banks with criteria - bankId: null, fullName: , abbreviation: , active: null
+2024-08-29 15:31:44 [http-nio-8080-exec-8] INFO  c.t.a.controller.CustomerController - Fetching all active customers with no accounts
+2024-08-29 15:31:44 [http-nio-8080-exec-8] INFO  c.t.app.service.CustomerServiceImpl - Fetching all active customers with no accounts
+2024-08-29 16:05:25 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m58s527ms296µs400ns).

@@ -1,0 +1,20 @@
+package com.techlabs.app.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+public class BankResponseDTO {
+    private long bankId;
+
+    private String fullName;
+
+    private String abbreviation;
+
+    private boolean active;
+}
