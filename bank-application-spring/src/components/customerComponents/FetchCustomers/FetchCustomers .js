@@ -1,25 +1,25 @@
 import React, { useEffect, useState, useRef } from "react";
 import { getAllCustomers, searchCustomers as searchCustomersService, getCustomerById, deleteCustomer, activateCustomer } from "../../../services/adminService";
 import { sanitizedData } from "../../../utils/helpers/sanitizedData";
-import Table from "../../../sharedComponents/customerTable/Table";
 import Pagination from "../../../sharedComponents/Pagination/Pagination";
 import Modal from "../../../sharedComponents/ModalComponents/Modal";
 import UpdateCustomerForm from "../updateCustomer/UpdateCustomer";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { errorToast, successToast, warnToast } from "../../../utils/Toast/Toast";
 import { isAdmin } from "../../../services/loginAuthService";
+import SharedTable from "../../../sharedComponents/SharedTable/SharedTable";
 
 const FetchCustomers = () => {
   const [sanitizedCustomers, setSanitizedCustomers] = useState([]);
-  const [pageSize, setPageSize] = useState(5);
-  const [pageNumber, setPageNumber] = useState(0);
+  const [urlSearchParams, setURLSearchParams] = useSearchParams();
+  const [pageSize, setPageSize] = useState(Number(urlSearchParams.get("pageSize")) || 5);
+  const [pageNumber, setPageNumber] = useState(Number(urlSearchParams.get("pageNumber")) || 0);
   const [totalPages, setTotalPages] = useState(0);
   const [searchActive, setSearchActive] = useState(true);
   const [selectedCustomer, setSelectedCustomer] = useState(null);
   const [isUpdateCustomerModalOpen, setUpdateCustomerModalOpen] = useState(false);
   const searchRef = useRef();
   const navigate = useNavigate();
-  const [urlSearchParams, setURLSearchParams] = useSearchParams();
 
   const [searchParams, setSearchParams] = useState({
     customerId: urlSearchParams.get("customerId") || "",
@@ -52,6 +52,14 @@ const FetchCustomers = () => {
     fetchData();
   }, [pageNumber, pageSize, searchActive]);
 
+  useEffect(() => {
+    setURLSearchParams({
+      ...searchParams,
+      pageNumber: pageNumber.toString(),
+      pageSize: pageSize.toString(),
+    });
+  }, [pageNumber, pageSize, searchParams]);
+
   const handleSearchChange = (e) => {
     const { id, value } = e.target;
     setSearchParams((prevParams) => ({
@@ -64,7 +72,7 @@ const FetchCustomers = () => {
     e.preventDefault();
     setPageNumber(0);
     setSearchActive(true);
-    setURLSearchParams({ ...searchParams });
+    setURLSearchParams({ ...searchParams, pageNumber: "0", pageSize: pageSize.toString() });
     searchCustomers();
   };
 
@@ -77,8 +85,9 @@ const FetchCustomers = () => {
       activeStatus: "",
     });
     setPageNumber(0);
+    setPageSize(5);
     setSearchActive(false);
-    setURLSearchParams({});
+    setURLSearchParams({ pageNumber: "0", pageSize: "5" });
     getAllCustomer();
   };
 
@@ -153,7 +162,8 @@ const FetchCustomers = () => {
       setUpdateCustomerModalOpen(true);
 
       if (updatedData) {
-        setSanitizedCustomers((prevCustomers) => prevCustomers.map((customer) => (customer.id === updatedData.id ? { ...customer, ...updatedData } : customer)));
+        getAllCustomer();
+        // setSanitizedCustomers((prevCustomers) => prevCustomers.map((customer) => (customer.id === updatedData.id ? { ...customer, ...updatedData } : customer)));
         setUpdateCustomerModalOpen(false);
       }
     } catch (error) {
@@ -183,6 +193,12 @@ const FetchCustomers = () => {
       console.error(error);
       errorToast(error.message || "Error activating customer");
     }
+  };
+
+  const actions = {
+    activate: handleActivateCustomer,
+    delete: handleDeleteCustomer,
+    update: handleUpdateCustomer,
   };
 
   return (
@@ -220,7 +236,7 @@ const FetchCustomers = () => {
 
       <div className="card inner-card mt-1">
         <div className="card-body">
-          <Table data={sanitizedCustomers} onUpdateCustomer={handleUpdateCustomer} onDeleteCustomer={handleDeleteCustomer} onActivateCustomer={handleActivateCustomer} />
+          <SharedTable data={sanitizedCustomers} actions={actions} />
         </div>
       </div>
 

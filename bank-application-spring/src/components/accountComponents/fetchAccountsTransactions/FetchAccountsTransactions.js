@@ -5,17 +5,18 @@ import Pagination from "../../../sharedComponents/Pagination/Pagination";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { warnToast } from "../../../utils/Toast/Toast";
 import { isAdmin } from "../../../services/loginAuthService";
-import TransactionTable from "../../../sharedComponents/transactionTable/TransactionTable";
+import SharedTable from "../../../sharedComponents/SharedTable/SharedTable";
 
 const FetchAccountsTransactions = () => {
   const [sanitizedAccountTransactions, setSanitizedAccountTransactions] = useState([]);
-  const [pageSize, setPageSize] = useState(5);
-  const [pageNumber, setPageNumber] = useState(0);
+  const [urlSearchParams, setURLSearchParams] = useSearchParams();
+  const [pageSize, setPageSize] = useState(Number(urlSearchParams.get("pageSize")) || 5);
+  const [pageNumber, setPageNumber] = useState(Number(urlSearchParams.get("pageNumber")) || 0);
   const [totalPages, setTotalPages] = useState(0);
   const [searchActive, setSearchActive] = useState(true);
   const searchRef = useRef();
   const navigate = useNavigate();
-  const [urlSearchParams, setURLSearchParams] = useSearchParams();
+
   const [searchParams, setSearchParams] = useState({
     transactionId: urlSearchParams.get("transactionId") || "",
     senderAccountNumber: urlSearchParams.get("senderAccountNumber") || "",
@@ -50,6 +51,14 @@ const FetchAccountsTransactions = () => {
     fetchData();
   }, [pageNumber, pageSize, searchActive]);
 
+  useEffect(() => {
+    setURLSearchParams({
+      ...searchParams,
+      pageNumber: pageNumber.toString(),
+      pageSize: pageSize.toString(),
+    });
+  }, [pageNumber, pageSize, searchParams]);
+
   const handleSearchChange = (e) => {
     const { id, value } = e.target;
     setSearchParams((prevParams) => ({
@@ -62,7 +71,7 @@ const FetchAccountsTransactions = () => {
     e.preventDefault();
     setPageNumber(0);
     setSearchActive(true);
-    setURLSearchParams({ ...searchParams });
+    setURLSearchParams({ ...searchParams, pageNumber: "0", pageSize: pageSize.toString() });
     searchAccountTransactions();
   };
 
@@ -78,8 +87,9 @@ const FetchAccountsTransactions = () => {
       maxAmount: "",
     });
     setPageNumber(0);
+    setPageSize(5);
     setSearchActive(false);
-    setURLSearchParams({});
+    setURLSearchParams({ pageNumber: "0", pageSize: "5" });
     getAllAccountsTransaction();
   };
 
@@ -145,6 +155,7 @@ const FetchAccountsTransactions = () => {
     }
   };
 
+
   return (
     <div className="card dashboard-card mb-3">
       <nav className="navbar bg-body-tertiary mb-5">
@@ -179,7 +190,7 @@ const FetchAccountsTransactions = () => {
 
       <div className="card inner-card mt-1">
         <div className="card-body">
-          <TransactionTable data={sanitizedAccountTransactions} />
+          <SharedTable data={sanitizedAccountTransactions} />
         </div>
       </div>
 

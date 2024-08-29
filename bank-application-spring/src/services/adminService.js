@@ -1,11 +1,13 @@
 import axios from "axios";
-import { errorToast, successToast } from "../utils/Toast/Toast";
+
+const API_BASE_URL = `http://localhost:8080`;
+const accessToken = localStorage.getItem("Authorization");
 
 export const getAllCustomers = async ({ size, page }) => {
   try {
-    const response = await axios.get("http://localhost:8080/api/customers", {
+    const response = await axios.get(`${API_BASE_URL}/api/customers`, {
       headers: {
-        Authorization: `Bearer ${localStorage.getItem("Authorization")}`,
+        Authorization: `Bearer ${accessToken}`,
       },
       params: {
         size,
@@ -17,15 +19,15 @@ export const getAllCustomers = async ({ size, page }) => {
     return response.data;
   } catch (error) {
     console.error(error);
-    errorToast(error.response.data.message);
+    throw error;
   }
 };
 
 export const getNonAccountCustomers = async ({ size, page }) => {
   try {
-    const response = await axios.get("http://localhost:8080/api/customers/active-no-accounts", {
+    const response = await axios.get(`${API_BASE_URL}/api/customers/active-no-accounts`, {
       headers: {
-        Authorization: `Bearer ${localStorage.getItem("Authorization")}`,
+        Authorization: `Bearer ${accessToken}`,
       },
       params: {
         size,
@@ -37,7 +39,7 @@ export const getNonAccountCustomers = async ({ size, page }) => {
     return response.data;
   } catch (error) {
     console.error(error);
-    errorToast(error.response.data.message);
+    throw error;
   }
 };
 
@@ -45,9 +47,9 @@ export const getCustomerById = async (customerId) => {
   console.log(customerId);
 
   try {
-    const response = await axios.get(`http://localhost:8080/api/customers/${customerId}`, {
+    const response = await axios.get(`${API_BASE_URL}/api/customers/${customerId}`, {
       headers: {
-        Authorization: `Bearer ${localStorage.getItem("Authorization")}`,
+        Authorization: `Bearer ${accessToken}`,
       },
     });
     console.log(response.data);
@@ -55,14 +57,14 @@ export const getCustomerById = async (customerId) => {
     return response.data;
   } catch (error) {
     console.error(error);
-    errorToast(error.response.data.message);
+    throw error;
   }
 };
 
 export const updateCustomerDetails = async (customer) => {
   try {
     const response = await axios.put(
-      `http://localhost:8080/api/customers`,
+      `${API_BASE_URL}/api/customers`,
       {
         customerId: customer.id,
         firstName: customer.firstName,
@@ -70,22 +72,21 @@ export const updateCustomerDetails = async (customer) => {
       },
       {
         headers: {
-          Authorization: `Bearer ${localStorage.getItem("Authorization")}`,
+          Authorization: `Bearer ${accessToken}`,
         },
       }
     );
     return response.data;
   } catch (error) {
     console.error(error);
-    errorToast(error.response.data.message);
+    throw error;
   }
 };
 
 export const addCustomer = async (customer) => {
-  let accessToken = localStorage.getItem("Authorization");
   try {
     const response = await axios.post(
-      `http://localhost:8080/api/customers`,
+      `${API_BASE_URL}/api/customers`,
       {
         username: customer.username,
         firstName: customer.firstName,
@@ -103,15 +104,15 @@ export const addCustomer = async (customer) => {
     return response.data;
   } catch (error) {
     console.error(error);
-    errorToast(error.response.data.message);
+    throw error;
   }
 };
 
 export const searchCustomers = async ({ size, page, customerId, fName, lName, activeStatus }) => {
   try {
-    const response = await axios.get("http://localhost:8080/api/customers/search", {
+    const response = await axios.get(`${API_BASE_URL}/api/customers/search`, {
       headers: {
-        Authorization: `Bearer ${localStorage.getItem("Authorization")}`,
+        Authorization: `Bearer ${accessToken}`,
       },
       params: {
         customerId,
@@ -127,48 +128,48 @@ export const searchCustomers = async ({ size, page, customerId, fName, lName, ac
     return response.data;
   } catch (error) {
     console.error(error);
-    errorToast(error.response.data.message);
+    throw error;
   }
 };
 
 export const deleteCustomer = async (customerId) => {
   try {
-    const response = await axios.delete(`http://localhost:8080/api/customers/${customerId}`, {
+    const response = await axios.delete(`${API_BASE_URL}/api/customers/${customerId}`, {
       headers: {
-        Authorization: `Bearer ${localStorage.getItem("Authorization")}`,
+        Authorization: `Bearer ${accessToken}`,
       },
     });
 
     return response.data;
   } catch (error) {
     console.error(error);
-    errorToast(error.response.data.message);
+    throw error;
   }
 };
 
 export const activateCustomer = async (customerId) => {
   try {
     const response = await axios.put(
-      `http://localhost:8080/api/customers/activate/${customerId}`,
+      `${API_BASE_URL}/api/customers/activate/${customerId}`,
       {},
       {
         headers: {
-          Authorization: `Bearer ${localStorage.getItem("Authorization")}`,
+          Authorization: `Bearer ${accessToken}`,
         },
       }
     );
     return response.data;
   } catch (error) {
     console.error(error);
-    errorToast(error.response.data.message);
+    throw error;
   }
 };
 
 export const getAllBanks = async ({ size, page }) => {
   try {
-    const response = await axios.get(`http://localhost:8080/api/banks`, {
+    const response = await axios.get(`${API_BASE_URL}/api/banks`, {
       headers: {
-        Authorization: `Bearer ${localStorage.getItem("Authorization")}`,
+        Authorization: `Bearer ${accessToken}`,
       },
 
       params: {
@@ -180,29 +181,29 @@ export const getAllBanks = async ({ size, page }) => {
     return response.data;
   } catch (error) {
     console.error(error);
-    errorToast(error.response.data.message);
+    throw error;
   }
 };
 
 export const getBankById = async (bankId) => {
   try {
-    const response = await axios.get(`http://localhost:8080/api/banks/${bankId}`, {
+    const response = await axios.get(`${API_BASE_URL}/api/banks/${bankId}`, {
       headers: {
-        Authorization: `Bearer ${localStorage.getItem("Authorization")}`,
+        Authorization: `Bearer ${accessToken}`,
       },
     });
 
     return response.data;
   } catch (error) {
     console.error(error);
-    errorToast(error.response.data.message);
+    throw error;
   }
 };
 
 export const updateBankDetails = async (bank) => {
   try {
     const response = await axios.put(
-      `http://localhost:8080/api/banks`,
+      `${API_BASE_URL}/api/banks`,
       {
         bankId: bank.bankId,
         fullName: bank.fullName,
@@ -210,7 +211,7 @@ export const updateBankDetails = async (bank) => {
       },
       {
         headers: {
-          Authorization: `Bearer ${localStorage.getItem("Authorization")}`,
+          Authorization: `Bearer ${accessToken}`,
         },
       }
     );
@@ -218,21 +219,21 @@ export const updateBankDetails = async (bank) => {
     return response.data;
   } catch (error) {
     console.error(error);
-    errorToast(error.response.data.message);
+    throw error;
   }
 };
 
 export const addBank = async (bank) => {
   try {
     const response = await axios.post(
-      `http://localhost:8080/api/banks`,
+      `${API_BASE_URL}/api/banks`,
       {
         fullName: bank.fullName,
         abbreviation: bank.abbreviation,
       },
       {
         headers: {
-          Authorization: `Bearer ${localStorage.getItem("Authorization")}`,
+          Authorization: `Bearer ${accessToken}`,
         },
       }
     );
@@ -240,13 +241,13 @@ export const addBank = async (bank) => {
     return response.data;
   } catch (error) {
     console.error(error);
-    errorToast(error.response.data.message);
+    throw error;
   }
 };
 
 export const searchBanks = async ({ size, page, bankId, fullName, abbreviation, activeStatus }) => {
   try {
-    const response = await axios.get(`http://localhost:8080/api/banks/search`, {
+    const response = await axios.get(`${API_BASE_URL}/api/banks/search`, {
       params: {
         bankId,
         fullName,
@@ -256,55 +257,55 @@ export const searchBanks = async ({ size, page, bankId, fullName, abbreviation, 
         size,
       },
       headers: {
-        Authorization: `Bearer ${localStorage.getItem("Authorization")}`,
+        Authorization: `Bearer ${accessToken}`,
       },
     });
 
     return response.data;
   } catch (error) {
     console.error(error);
-    errorToast(error.response.data.message);
+    throw error;
   }
 };
 
 export const deleteBank = async (bankId) => {
   try {
-    const response = await axios.delete(`http://localhost:8080/api/banks/${bankId}`, {
+    const response = await axios.delete(`${API_BASE_URL}/api/banks/${bankId}`, {
       headers: {
-        Authorization: `Bearer ${localStorage.getItem("Authorization")}`,
+        Authorization: `Bearer ${accessToken}`,
       },
     });
 
     return response.data;
   } catch (error) {
     console.error(error);
-    errorToast(error.response.data.message);
+    throw error;
   }
 };
 
 export const activateBank = async (bankId) => {
   try {
     const response = await axios.put(
-      `http://localhost:8080/api/banks/activate/${bankId}`,
+      `${API_BASE_URL}/api/banks/activate/${bankId}`,
       {},
       {
         headers: {
-          Authorization: `Bearer ${localStorage.getItem("Authorization")}`,
+          Authorization: `Bearer ${accessToken}`,
         },
       }
     );
     return response.data;
   } catch (error) {
     console.error(error);
-    errorToast(error.response.data.message);
+    throw error;
   }
 };
 
 export const getAllAccounts = async ({ size, page }) => {
   try {
-    const response = await axios.get(`http://localhost:8080/api/accounts`, {
+    const response = await axios.get(`${API_BASE_URL}/api/accounts`, {
       headers: {
-        Authorization: `Bearer ${localStorage.getItem("Authorization")}`,
+        Authorization: `Bearer ${accessToken}`,
       },
 
       params: {
@@ -316,33 +317,32 @@ export const getAllAccounts = async ({ size, page }) => {
     return response.data;
   } catch (error) {
     console.error(error);
-    errorToast(error.response.data.message);
+    throw error;
   }
 };
 
 export const createNewAccount = async ({ customerId, bankId }) => {
   try {
     const response = await axios.post(
-      `http://localhost:8080/api/accounts/${customerId}/${bankId}`,
+      `${API_BASE_URL}/api/accounts/${customerId}/${bankId}`,
       {},
       {
         headers: {
-          Authorization: `Bearer ${localStorage.getItem("Authorization")}`,
+          Authorization: `Bearer ${accessToken}`,
         },
       }
     );
 
-    successToast(`Account created for customer with ID : ${customerId}`);
     return response.data;
   } catch (error) {
     console.error(error);
-    errorToast(error.response.data.message);
+    throw error;
   }
 };
 
 export const searchAccounts = async ({ size, page, accountNumber, minBalance, maxBalance, bankName, activeStatus }) => {
   try {
-    const response = await axios.get(`http://localhost:8080/api/accounts/search`, {
+    const response = await axios.get(`${API_BASE_URL}/api/accounts/search`, {
       params: {
         accountNumber,
         minBalance,
@@ -353,53 +353,53 @@ export const searchAccounts = async ({ size, page, accountNumber, minBalance, ma
         size,
       },
       headers: {
-        Authorization: `Bearer ${localStorage.getItem("Authorization")}`,
+        Authorization: `Bearer ${accessToken}`,
       },
     });
 
     return response.data;
   } catch (error) {
     console.error(error);
-    errorToast(error.response.data.message);
+    throw error;
   }
 };
 
 export const deleteAccount = async (accountNumber) => {
   try {
-    const response = await axios.delete(`http://localhost:8080/api/accounts/${accountNumber}`, {
+    const response = await axios.delete(`${API_BASE_URL}/api/accounts/${accountNumber}`, {
       headers: {
-        Authorization: `Bearer ${localStorage.getItem("Authorization")}`,
+        Authorization: `Bearer ${accessToken}`,
       },
     });
 
     return response.data;
   } catch (error) {
     console.error(error);
-    errorToast(error.response.data.message);
+    throw error;
   }
 };
 
 export const activateAccount = async (accountNumber) => {
   try {
     const response = await axios.put(
-      `http://localhost:8080/api/accounts/activate/${accountNumber}`,
+      `${API_BASE_URL}/api/accounts/activate/${accountNumber}`,
       {},
       {
         headers: {
-          Authorization: `Bearer ${localStorage.getItem("Authorization")}`,
+          Authorization: `Bearer ${accessToken}`,
         },
       }
     );
     return response.data;
   } catch (error) {
     console.error(error);
-    errorToast(error.response.data.message);
+    throw error;
   }
 };
 
 export const searchAccountsTransactions = async ({ size, page, transactionId, senderAccountNumber, receiverAccountNumber, startDate, endDate, minAmount, maxAmount }) => {
   try {
-    const response = await axios.get(`http://localhost:8080/api/accounts/transactions/search`, {
+    const response = await axios.get(`${API_BASE_URL}/api/accounts/transactions/search`, {
       params: {
         transactionId,
         senderAccountNumber,
@@ -412,23 +412,23 @@ export const searchAccountsTransactions = async ({ size, page, transactionId, se
         size,
       },
       headers: {
-        Authorization: `Bearer ${localStorage.getItem("Authorization")}`,
+        Authorization: `Bearer ${accessToken}`,
       },
     });
 
     return response.data;
   } catch (error) {
     console.error(error);
-    errorToast(error.response.data.message);
+    throw error;
   }
 };
 
 export const viewCustomerDocument = async (customerId) => {
   try {
     console.log("Sending request to view document for customer ID:", customerId);
-    const response = await axios.get(`http://localhost:8080/api/file/view/${customerId}`, {
+    const response = await axios.get(`${API_BASE_URL}/api/file/view/${customerId}`, {
       headers: {
-        Authorization: `Bearer ${localStorage.getItem("Authorization")}`,
+        Authorization: `Bearer ${accessToken}`,
       },
       responseType: "arraybuffer",
     });
@@ -438,6 +438,6 @@ export const viewCustomerDocument = async (customerId) => {
     const fileURL = URL.createObjectURL(file);
     return fileURL;
   } catch (error) {
-    errorToast(error.response.data.message);
+    throw error;
   }
 };

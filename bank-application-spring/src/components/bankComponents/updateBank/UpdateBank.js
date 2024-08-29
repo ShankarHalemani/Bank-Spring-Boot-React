@@ -5,11 +5,17 @@ import { isAdmin } from "../../../services/loginAuthService";
 import Login from "../../loginComponent/Login";
 import "../updateBank/UpdateBank.css";
 import { errorToast, successToast } from "../../../utils/Toast/Toast";
+import { showValidationMessages, validateField, validateForm } from "../../../utils/validator/validator";
 
 const UpdateBank = ({ currentBank, onClose, onBankUpdate }) => {
   const navigate = useNavigate();
   const [bank, setBank] = useState(null);
   const [isAdminUser, setIsAdminUser] = useState(false);
+  const [isTouched, setIsTouched] = useState(false);
+  const [formData, setFormData] = useState({
+    fullName: "",
+    abbreviation: "",
+  });
 
   useEffect(() => {
     const fetchBankData = async () => {
@@ -26,7 +32,7 @@ const UpdateBank = ({ currentBank, onClose, onBankUpdate }) => {
         setBank(bankData);
       } catch (error) {
         console.error("Error fetching Bank:", error);
-        errorToast("Failed to fetch Bank data.")
+        errorToast("Failed to fetch Bank data.");
       }
     };
 
@@ -42,10 +48,19 @@ const UpdateBank = ({ currentBank, onClose, onBankUpdate }) => {
       ...prevBank,
       [name]: value,
     }));
+    setFormData((prevBank) => ({
+      ...prevBank,
+      [name]: value,
+    }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!validateForm()) {
+      showValidationMessages();
+      setIsTouched(true);
+      return;
+    }
     try {
       const updatedBank = await updateBankDetails(bank);
       console.log(updatedBank);
@@ -54,7 +69,7 @@ const UpdateBank = ({ currentBank, onClose, onBankUpdate }) => {
       onClose();
     } catch (error) {
       console.error(error);
-      errorToast("Error updating Bank")
+      errorToast("Error updating Bank");
     }
   };
 
@@ -64,11 +79,13 @@ const UpdateBank = ({ currentBank, onClose, onBankUpdate }) => {
         <form onSubmit={handleSubmit}>
           <div className="form-group mb-2">
             <label htmlFor="fullName">Full Name</label>
-            <input type="text" className="form-control" id="fullName" name="fullName" value={bank.fullName} onChange={handleChange} />
+            <input type="text" className="form-control" id="fullName" name="fullName" value={bank.fullName} onChange={handleChange} onBlur={() => validateField("fullName", formData.fullName, "required|min:2|max:50")} />
+            {isTouched && validateField("fullName", formData.fullName, "required|min:2|max:50")}
           </div>
           <div className="form-group mb-2">
             <label htmlFor="abbreviation">Abbreviation</label>
-            <input type="text" className="form-control" id="abbreviation" name="abbreviation" value={bank.abbreviation} onChange={handleChange} />
+            <input type="text" className="form-control" id="abbreviation" name="abbreviation" value={bank.abbreviation} onChange={handleChange} onBlur={() => validateField("abbreviation", formData.abbreviation, "required|min:2|max:50")} />
+            {isTouched && validateField("abbreviation", formData.abbreviation, "required|min:2|max:50")}
           </div>
           <button type="submit" className="btn btn-primary mt-2">
             Update

@@ -4,15 +4,15 @@ import Pagination from "../../../sharedComponents/Pagination/Pagination";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { warnToast } from "../../../utils/Toast/Toast";
 import { isCustomer } from "../../../services/loginAuthService";
-import TransactionTable from "../../../sharedComponents/transactionTable/TransactionTable";
 import { searchTransactions } from "../../../services/customerService";
 import { getCustomerById } from "../../../services/adminService";
+import SharedTable from "../../../sharedComponents/SharedTable/SharedTable";
 
 const FetchTransactions = () => {
   const [sanitizedTransactions, setSanitizedTransactions] = useState([]);
   const [urlSearchParams, setURLSearchParams] = useSearchParams();
-  const [pageSize, setPageSize] = useState(5);
-  const [pageNumber, setPageNumber] = useState(0);
+  const [pageSize, setPageSize] = useState(Number(urlSearchParams.get("pageSize")) || 5);
+  const [pageNumber, setPageNumber] = useState(Number(urlSearchParams.get("pageNumber")) || 0);
   const [totalPages, setTotalPages] = useState(0);
   const [searchActive, setSearchActive] = useState(true);
   const [currentCustomer, setCurrentCustomer] = useState(null);
@@ -62,6 +62,14 @@ const FetchTransactions = () => {
     fetchData();
   }, [pageNumber, pageSize, searchActive]);
 
+  useEffect(() => {
+    setURLSearchParams({
+      ...searchParams,
+      pageNumber: pageNumber.toString(),
+      pageSize: pageSize.toString(),
+    });
+  }, [pageNumber, pageSize, searchParams]);
+
   const handleSearchChange = (e) => {
     const { id, value } = e.target;
     setSearchParams((prevParams) => ({
@@ -74,7 +82,7 @@ const FetchTransactions = () => {
     e.preventDefault();
     setPageNumber(0);
     setSearchActive(true);
-    setURLSearchParams({ ...searchParams });
+    setURLSearchParams({ ...searchParams, pageNumber: "0", pageSize: pageSize.toString() });
     searchTransaction();
   };
 
@@ -82,8 +90,9 @@ const FetchTransactions = () => {
     searchRef.current.reset();
     setSearchParams({ transactionId: "", accountNumber: "", startDate: "", endDate: "", minAmount: "", maxAmount: "" });
     setPageNumber(0);
+    setPageSize(5);
     setSearchActive(false);
-    setURLSearchParams({});
+    setURLSearchParams({ pageNumber: "0", pageSize: "5" });
     getAllTransaction();
   };
 
@@ -199,7 +208,7 @@ const FetchTransactions = () => {
 
       <div className="card inner-card mt-1">
         <div className="card-body">
-          <TransactionTable data={sanitizedTransactions} />
+          <SharedTable data={sanitizedTransactions} />
         </div>
       </div>
 

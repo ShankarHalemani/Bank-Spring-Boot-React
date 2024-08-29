@@ -1,11 +1,11 @@
 import React, { useEffect, useState, useRef } from "react";
 import { getAllAccounts, searchAccounts as searchAccountsService, deleteAccount, activateAccount } from "../../../services/adminService";
 import { sanitizedData } from "../../../utils/helpers/sanitizedData";
-import AccountTable from "../../../sharedComponents/accountTable/AccountTable";
 import Pagination from "../../../sharedComponents/Pagination/Pagination";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { errorToast, successToast, warnToast } from "../../../utils/Toast/Toast";
 import { isAdmin } from "../../../services/loginAuthService";
+import SharedTable from "../../../sharedComponents/SharedTable/SharedTable";
 
 const FetchAccounts = () => {
   const [sanitizedAccounts, setSanitizedAccounts] = useState([]);
@@ -49,13 +49,14 @@ const FetchAccounts = () => {
     fetchData();
   }, [pageNumber, pageSize, searchActive]);
 
+
   useEffect(() => {
-    setURLSearchParams((prevParams) => ({
-      ...prevParams,
-      pageNumber,
-      pageSize,
-    }));
-  }, [pageNumber, pageSize]);
+    setURLSearchParams({
+      ...searchParams,
+      pageNumber: pageNumber.toString(),
+      pageSize: pageSize.toString(),
+    });
+  }, [pageNumber, pageSize, searchParams]);
 
   const handleSearchChange = (e) => {
     const { id, value } = e.target;
@@ -69,7 +70,7 @@ const FetchAccounts = () => {
     e.preventDefault();
     setPageNumber(0);
     setSearchActive(true);
-    setURLSearchParams({ ...searchParams });
+    setURLSearchParams({ ...searchParams, pageNumber: "0", pageSize: pageSize.toString() });
     searchAccounts();
   };
 
@@ -83,10 +84,9 @@ const FetchAccounts = () => {
       activeStatus: "",
     });
     setPageNumber(0);
+    setPageSize(5); 
     setSearchActive(false);
-    setURLSearchParams({});
-    setPageNumber(0);
-    setPageSize(5);
+    setURLSearchParams({ pageNumber: "0", pageSize: "5" });
     getAllAccount();
   };
 
@@ -176,6 +176,11 @@ const FetchAccounts = () => {
     }
   };
 
+  const actions = {
+    activate: handleActivateAccount,
+    delete: handleDeleteAccount,
+  };
+
   return (
     <div className="card dashboard-card mb-3">
       <nav className="navbar bg-body-tertiary mb-5">
@@ -212,7 +217,7 @@ const FetchAccounts = () => {
 
       <div className="card inner-card mt-1">
         <div className="card-body">
-          <AccountTable data={sanitizedAccounts} onDeleteAccount={handleDeleteAccount} onActivateAccount={handleActivateAccount} />
+          <SharedTable data={sanitizedAccounts} actions={actions} />
         </div>
       </div>
 

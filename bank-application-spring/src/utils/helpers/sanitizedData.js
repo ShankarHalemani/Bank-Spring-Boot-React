@@ -1,11 +1,9 @@
 export const sanitizedData = ({ data, keysTobeSelected }) => {
   if (Array.isArray(data)) {
-    return data
-      .map((item) => sanitizedData({ data: item, keysTobeSelected }))
-      .filter(Boolean);
+    return data.map((item) => sanitizedData({ data: item, keysTobeSelected })).filter(Boolean);
   }
 
-  if (data && typeof data === 'object') {
+  if (data && typeof data === "object") {
     const resultList = {};
 
     keysTobeSelected.forEach((element) => {
@@ -14,13 +12,12 @@ export const sanitizedData = ({ data, keysTobeSelected }) => {
         const nestedKey = rest.join(".");
 
         if (data[firstKey]) {
-          resultList[firstKey] = {
-            ...resultList[firstKey],
-            ...sanitizedData({
-              data: data[firstKey],
-              keysTobeSelected: [nestedKey],
-            }),
-          };
+          const nestedResult = sanitizedData({
+            data: data[firstKey],
+            keysTobeSelected: [nestedKey],
+          });
+
+          Object.assign(resultList, nestedResult);
         }
       } else if (data.hasOwnProperty(element)) {
         resultList[element] = data[element];

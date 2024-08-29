@@ -5,11 +5,20 @@ import { useNavigate } from "react-router-dom";
 import { register } from "../../services/loginAuthService";
 import "./Register.css";
 import { successToast } from "../../utils/Toast/Toast";
+import { showValidationMessages, validateField, validateForm, validatePassword } from "../../utils/validator/validator";
 
 function Register() {
   const formRef = useRef();
   const navigate = useNavigate();
   const [role, setRole] = useState("customer");
+  const [isTouched, setIsTouched] = useState(false);
+  const [formData, setFormData] = useState({
+    username: "",
+    password: "",
+    firstName: "",
+    lastName: "",
+    file: "",
+  });
 
   const handleRoleChange = (e) => {
     setRole(e.target.value);
@@ -26,6 +35,11 @@ function Register() {
     const firstName = e.target.firstName.value;
     const lastName = e.target.lastName.value;
     const file = role === "customer" ? e.target.file.files[0] : null;
+    if (!validateForm()) {
+      showValidationMessages();
+      setIsTouched(true);
+      return;
+    }
 
     try {
       const response = await register({ username, password, firstName, lastName, role, file });
@@ -39,6 +53,14 @@ function Register() {
     }
   };
 
+  const handleInputChange = (e) => {
+    const { id, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [id]: value,
+    }));
+  };
+
   return (
     <div className="login-container">
       <div className="card login-card">
@@ -47,22 +69,25 @@ function Register() {
           <Form ref={formRef} onSubmit={handleSubmit}>
             <Form.Group className="mb-3" controlId="firstName">
               <Form.Label>First Name</Form.Label>
-              <Form.Control type="text" placeholder="Enter First Name" required />
+              <Form.Control type="text" placeholder="Enter First Name" onChange={handleInputChange} onBlur={() => validateField("firstName", formData.firstName, "required|min:2|max:50")} />
+              {isTouched && validateField("firstName", formData.firstName, "required|min:2|max:50")}
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="lastName">
               <Form.Label>Last Name</Form.Label>
-              <Form.Control type="text" placeholder="Enter Last Name" required />
+              <Form.Control type="text" placeholder="Enter Last Name" onChange={handleInputChange} onBlur={() => validateField("lastName", formData.lastName, "required|min:2|max:50")} />
+              {isTouched && validateField("lastName", formData.lastName, "required|min:2|max:50")}
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="email">
               <Form.Label>Username</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" required />
+              <Form.Control type="email" placeholder="Enter email" onChange={handleInputChange} />
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="password">
               <Form.Label>Password</Form.Label>
-              <Form.Control type="password" placeholder="Password" required />
+              <Form.Control type="password" placeholder="Password" onChange={handleInputChange} onBlur={() => validatePassword(formData.password)} />
+              {isTouched && validatePassword(formData.password)}
             </Form.Group>
 
             <Form.Group className="mb-3">

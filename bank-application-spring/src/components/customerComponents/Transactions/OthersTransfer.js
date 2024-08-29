@@ -2,12 +2,15 @@ import React, { useEffect, useRef, useState } from "react";
 import { getCustomerById } from "../../../services/adminService";
 import { errorToast, successToast, warnToast } from "../../../utils/Toast/Toast";
 import { getAccountByAccountNumber, makeNewTransaction } from "../../../services/customerService";
+import { showValidationMessages, validateField, validateForm } from "../../../utils/validator/validator";
 
 function OthersTransfer({ onClose }) {
   const [currentCustomer, setCurrentCustomer] = useState(null);
   const [selectedSenderAccount, setSelectedSenderAccount] = useState(null);
   const [amount, setAmount] = useState("");
   const formRef = useRef();
+  const [isTouched, setIsTouched] = useState(false);
+  const [formData, setFormData] = useState({ amount: "", receiverAccount: "" });
 
   useEffect(() => {
     const checkForAccounts = async () => {
@@ -34,21 +37,26 @@ function OthersTransfer({ onClose }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!validateForm()) {
+      showValidationMessages();
+      setIsTouched(true);
+      return;
+    }
     try {
       const selectedReceiverAccountNumber = formRef.current.querySelector("#receiverAccount").value;
       const receiverAccount = await getAccountByAccountNumber(parseInt(selectedReceiverAccountNumber));
-      
+
       if (!receiverAccount) {
         errorToast("Account not found or invalid account number.");
         return;
       }
-  
+
       await makeNewTransaction({
         senderAccount: selectedSenderAccount.accountNumber,
         receiverAccount: receiverAccount.accountNumber,
         amount,
       });
-  
+
       successToast("Transaction completed successfully.");
       onClose();
     } catch (error) {
@@ -56,7 +64,17 @@ function OthersTransfer({ onClose }) {
       errorToast("Error completing transaction.");
     }
   };
-  
+
+  const handleInputChange = (e) => {
+    const { id, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [id]: value,
+    }));
+    if (id === "amount") {
+      setAmount(e.target.value);
+    }
+  };
 
   return (
     <div className="card inner-card mt-1">
@@ -81,13 +99,15 @@ function OthersTransfer({ onClose }) {
             <label htmlFor="receiverAccount" className="form-label">
               Receiver Account Number
             </label>
-            <input type="number" name="receiverAccount" id="receiverAccount" className="form-control" disabled={!selectedSenderAccount} />
+            <input type="number" name="receiverAccount" id="receiverAccount" className="form-control" disabled={!selectedSenderAccount} onChange={handleInputChange} onBlur={() => validateField("Reciever account", formData.receiverAccount, "required|notNaN")} />
+            {isTouched && validateField("Reciever account", formData.receiverAccount, "required|notNaN")}
           </div>
           <div className="mb-3">
             <label htmlFor="amount" className="form-label">
               Amount
             </label>
-            <input type="number" className="form-control" id="amount" value={amount} onChange={(e) => setAmount(e.target.value)} required />
+            <input type="number" className="form-control" id="amount" value={amount} onChange={handleInputChange} onBlur={() => validateField("Amount", formData.amount, "required|notNaN")} />
+            {isTouched && validateField("Amount", formData.amount, "required|notNaN")}
           </div>
           <button type="submit" className="btn btn-primary">
             Send

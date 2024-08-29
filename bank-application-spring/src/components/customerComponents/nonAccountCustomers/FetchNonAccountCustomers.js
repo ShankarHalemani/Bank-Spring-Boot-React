@@ -6,8 +6,8 @@ import Modal from "../../../sharedComponents/ModalComponents/Modal";
 import { useNavigate } from "react-router-dom";
 import { errorToast, warnToast } from "../../../utils/Toast/Toast";
 import { isAdmin } from "../../../services/loginAuthService";
-import NATable from "../../../sharedComponents/nonAccountCustomerTable/NATable";
 import CreateNewAccount from "../../accountComponents/createNewAccount/CreateNewAccount";
+import SharedTable from "../../../sharedComponents/SharedTable/SharedTable";
 
 const FetchNonAccountCustomers = () => {
   const [sanitizedCustomers, setSanitizedCustomers] = useState([]);
@@ -59,7 +59,6 @@ const FetchNonAccountCustomers = () => {
     totalPages,
   };
 
-
   const getAllCustomer = async () => {
     try {
       const response = await getNonAccountCustomers({
@@ -68,7 +67,7 @@ const FetchNonAccountCustomers = () => {
       });
 
       if (response.content) {
-        const keysTobeSelected = ["id", "firstName", "lastName"];
+        const keysTobeSelected = ["id", "firstName", "lastName", "active"];
         const sanitized = sanitizedData({ data: response.content, keysTobeSelected });
 
         const uniqueCustomers = sanitized.filter((customer, index, self) => index === self.findIndex((c) => c.id === customer.id));
@@ -103,14 +102,18 @@ const FetchNonAccountCustomers = () => {
       window.open(documentUrl, "_blank");
     } catch (error) {
       console.error(error);
-      alert("Failed to load the document.");
+      errorToast("Failed to load the document.");
     }
   };
-  
 
   const handleAccountCreationSuccess = (updatedCustomer) => {
     setSanitizedCustomers((prevCustomers) => prevCustomers.filter((customer) => customer.id !== updatedCustomer.id));
     setCreateNewAccountModalOpen(false);
+  };
+
+  const actions = {
+    create: handleCreateAccount,
+    view: handleViewDocument,
   };
 
   return (
@@ -131,7 +134,7 @@ const FetchNonAccountCustomers = () => {
 
       <div className="card inner-card mt-1">
         <div className="card-body">
-          <NATable data={sanitizedCustomers} onCreateNewAccount={handleCreateAccount} onViewDocument={handleViewDocument} />
+          <SharedTable data={sanitizedCustomers} actions={actions} />
         </div>
       </div>
 

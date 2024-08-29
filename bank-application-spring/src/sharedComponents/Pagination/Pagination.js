@@ -10,39 +10,34 @@ const Pagination = ({ pager, onPageChange }) => {
   }
 
   return (
-    <div className="d-flex align-items-center">
-      <PageSize sizer={{ pageSize: pager.pageSize, setPageSize: pager.setPageSize }} />
-      <ul className="pagination mb-0 ms-3 col-4">
-        <li className={`page-item ${pager.pageNumber === 0 ? "disabled" : ""}`}>
-          <button
-            className="page-link"
-            onClick={() => pager.pageNumber > 0 && onPageChange(pager.pageNumber - 1)}
-          >
-            Previous
-          </button>
-        </li>
-        {pageNumbers.map((page) => (
-          <li
-            key={page}
-            className={`page-item ${page === pager.pageNumber + 1 ? "active" : ""}`}
-          >
-            <button
-              className="page-link"
-              onClick={() => onPageChange(page - 1)}
-            >
-              {page}
+    <div className="row justify-content-between align-items-center">
+      <div className="col-md-3" style={{ maxWidth: "200px" }}>
+        <div className="form-group">
+          <PageSize sizer={{ pageSize: pager.pageSize, setPageSize: pager.setPageSize }} />
+        </div>
+      </div>
+
+      <div className="col-md-6">
+        <ul className="pagination justify-content-center mb-0">
+          <li className={`page-item ${pager.pageNumber === 0 ? "disabled" : ""}`}>
+            <button className="page-link" onClick={() => pager.pageNumber > 0 && onPageChange(pager.pageNumber - 1)}>
+              Previous
             </button>
           </li>
-        ))}
-        <li className={`page-item ${pager.pageNumber === pager.totalPages - 1 ? "disabled" : ""}`}>
-          <button
-            className="page-link"
-            onClick={() => pager.pageNumber < pager.totalPages - 1 && onPageChange(pager.pageNumber + 1)}
-          >
-            Next
-          </button>
-        </li>
-      </ul>
+          {pageNumbers.map((page) => (
+            <li key={page} className={`page-item ${page === pager.pageNumber + 1 ? "active" : ""}`}>
+              <button className="page-link" onClick={() => onPageChange(page - 1)}>
+                {page}
+              </button>
+            </li>
+          ))}
+          <li className={`page-item ${pager.pageNumber === pager.totalPages - 1 ? "disabled" : ""}`}>
+            <button className="page-link" onClick={() => pager.pageNumber < pager.totalPages - 1 && onPageChange(pager.pageNumber + 1)}>
+              Next
+            </button>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };

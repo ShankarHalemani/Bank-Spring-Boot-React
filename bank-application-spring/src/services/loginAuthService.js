@@ -1,44 +1,42 @@
 import axios from "axios";
-import { errorToast } from "../utils/Toast/Toast";
+
+const API_BASE_URL = `http://localhost:8080`;
 
 export const login = async ({ userInput, passwordInput }) => {
   try {
-    const response = await axios.post("http://localhost:8080/api/auth/login", {
+    const response = await axios.post(`${API_BASE_URL}/api/auth/login`, {
       username: userInput,
       password: passwordInput,
     });
 
     return response.data;
   } catch (error) {
-    errorToast(error.response.data.message);
+    throw error;
   }
 };
-
 
 export const register = async ({ username, password, firstName, lastName, role, file = null }) => {
   try {
     const formData = new FormData();
-    formData.append('registerDTO', JSON.stringify({ username, password, firstName, lastName }));
-    formData.append('role', role);
+    formData.append("registerDTO", JSON.stringify({ username, password, firstName, lastName }));
+    formData.append("role", role);
 
-    if (file && role.toLowerCase() !== 'admin') {
-      formData.append('file', file);
+    if (file && role.toLowerCase() !== "admin") {
+      formData.append("file", file);
     }
 
-    const response = await axios.post('http://localhost:8080/api/auth/register', formData, {
+    const response = await axios.post(`${API_BASE_URL}/api/auth/register`, formData, {
       headers: {
-        'Content-Type': 'multipart/form-data',
+        "Content-Type": "multipart/form-data",
       },
     });
 
     return response.data;
   } catch (error) {
-    console.error('Registration error:', error);
+    console.error("Registration error:", error);
     throw error;
   }
 };
-
-
 
 export const isAdmin = async () => {
   const token = localStorage.getItem("Authorization");
@@ -48,7 +46,7 @@ export const isAdmin = async () => {
   }
 
   try {
-    const response = await axios.get("http://localhost:8080/api/auth/admin-verification", {
+    const response = await axios.get(`${API_BASE_URL}/api/auth/admin-verification`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -59,8 +57,8 @@ export const isAdmin = async () => {
     console.log(response.data);
     return response.data;
   } catch (error) {
-    alert("Error");
-    return false;
+    console.error(error);
+    throw error;
   }
 };
 
@@ -73,7 +71,7 @@ export const isCustomer = async () => {
 
   try {
     const token = localStorage.getItem("Authorization");
-    const response = await axios.get("http://localhost:8080/api/auth/customer-verification", {
+    const response = await axios.get(`${API_BASE_URL}/api/auth/customer-verification`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -84,7 +82,7 @@ export const isCustomer = async () => {
     console.log(response.data);
     return response.data;
   } catch (error) {
-    alert("Error");
-    return false;
+    console.error(error);
+    throw error;
   }
 };

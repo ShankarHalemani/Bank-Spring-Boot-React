@@ -2,12 +2,15 @@ import React, { useEffect, useState } from "react";
 import { getCustomerById } from "../../../services/adminService";
 import { errorToast, successToast, warnToast } from "../../../utils/Toast/Toast";
 import { makeNewTransaction } from "../../../services/customerService";
+import { showValidationMessages, validateField, validateForm } from "../../../utils/validator/validator";
 
 function SelfTransfer({ onClose }) {
   const [currentCustomer, setCurrentCustomer] = useState(null);
   const [selectedSenderAccount, setSelectedSenderAccount] = useState(null);
   const [selectedReceiverAccount, setSelectedReceiverAccount] = useState(null);
   const [amount, setAmount] = useState("");
+  const [isTouched, setIsTouched] = useState(false);
+  const [formData, setFormData] = useState({ amount: "" });
 
   useEffect(() => {
     const checkForAccounts = async () => {
@@ -45,6 +48,11 @@ function SelfTransfer({ onClose }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!validateForm()) {
+      showValidationMessages();
+      setIsTouched(true);
+      return;
+    }
     try {
       await makeNewTransaction({
         senderAccount: selectedSenderAccount.accountNumber,
@@ -56,6 +64,15 @@ function SelfTransfer({ onClose }) {
     } catch (error) {
       errorToast("Error completing transaction.");
     }
+  };
+
+  const handleInputChange = (e) => {
+    const { id, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [id]: value,
+    }));
+    setAmount(e.target.value);
   };
 
   return (
@@ -98,7 +115,8 @@ function SelfTransfer({ onClose }) {
             <label htmlFor="amount" className="form-label">
               Amount
             </label>
-            <input type="number" className="form-control" id="amount" value={amount} onChange={(e) => setAmount(e.target.value)} required />
+            <input type="number" className="form-control" id="amount" value={amount} onChange={handleInputChange} onBlur={() => validateField("amount", formData.amount, "required|notNaN")} />
+            {isTouched && validateField("amount", formData.amount, "required|notNaN")}
           </div>
           <button type="submit" className="btn btn-primary">
             Send

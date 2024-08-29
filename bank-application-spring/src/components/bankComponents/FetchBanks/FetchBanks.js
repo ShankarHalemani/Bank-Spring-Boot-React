@@ -3,23 +3,24 @@ import { useNavigate, useSearchParams } from "react-router-dom";
 import Pagination from "../../../sharedComponents/Pagination/Pagination";
 import Modal from "../../../sharedComponents/ModalComponents/Modal";
 import UpdateBank from "../updateBank/UpdateBank";
-import BankTable from "../../../sharedComponents/bankTable/BankTable";
 import { sanitizedData } from "../../../utils/helpers/sanitizedData";
 import { errorToast, successToast, warnToast } from "../../../utils/Toast/Toast";
 import { activateBank, deleteBank, getAllBanks, getBankById, searchBanks as searchBanksService } from "../../../services/adminService";
 import { isAdmin } from "../../../services/loginAuthService";
+import SharedTable from "../../../sharedComponents/SharedTable/SharedTable";
 
 const FetchBanks = () => {
   const [sanitizedBanks, setSanitizedBanks] = useState([]);
-  const [pageSize, setPageSize] = useState(5);
-  const [pageNumber, setPageNumber] = useState(0);
+  const [urlSearchParams, setURLSearchParams] = useSearchParams();
+  const [pageSize, setPageSize] = useState(Number(urlSearchParams.get("pageSize")) || 5);
+  const [pageNumber, setPageNumber] = useState(Number(urlSearchParams.get("pageNumber")) || 0);
   const [totalPages, setTotalPages] = useState(0);
   const [searchActive, setSearchActive] = useState(true);
   const [selectedBank, setSelectedBank] = useState(null);
   const [isUpdateBankModalOpen, setUpdateBankModalOpen] = useState(false);
   const searchRef = useRef();
   const navigate = useNavigate();
-  const [urlSearchParams, setURLSearchParams] = useSearchParams();
+
   const [searchParams, setSearchParams] = useState({
     bankId: urlSearchParams.get("bankId") || "",
     fullName: urlSearchParams.get("fullName") || "",
@@ -51,6 +52,14 @@ const FetchBanks = () => {
     fetchData();
   }, [pageNumber, pageSize, searchActive]);
 
+  useEffect(() => {
+    setURLSearchParams({
+      ...searchParams,
+      pageNumber: pageNumber.toString(),
+      pageSize: pageSize.toString(),
+    });
+  }, [pageNumber, pageSize, searchParams]);
+
   const handleSearchChange = (e) => {
     const { id, value } = e.target;
     setSearchParams((prevParams) => ({
@@ -63,7 +72,7 @@ const FetchBanks = () => {
     e.preventDefault();
     setPageNumber(0);
     setSearchActive(true);
-    setURLSearchParams({ ...searchParams });
+    setURLSearchParams({ ...searchParams, pageNumber: "0", pageSize: pageSize.toString() });
     searchBanks();
   };
 
@@ -76,8 +85,9 @@ const FetchBanks = () => {
       activeStatus: "",
     });
     setPageNumber(0);
+    setPageSize(5);
     setSearchActive(false);
-    setURLSearchParams({});
+    setURLSearchParams({ pageNumber: "0", pageSize: "5" });
     getAllBank();
   };
 
@@ -184,6 +194,12 @@ const FetchBanks = () => {
     }
   };
 
+  const actions = {
+    update: handleUpdateBank,
+    activate: handleActivateBank,
+    delete: handleDeleteBank,
+  };
+
   return (
     <div className="card dashboard-card mb-3">
       <nav className="navbar bg-body-tertiary mb-5">
@@ -219,7 +235,7 @@ const FetchBanks = () => {
 
       <div className="card inner-card mt-1">
         <div className="card-body">
-          <BankTable data={sanitizedBanks} onUpdateBank={handleUpdateBank} onDeleteBank={handleDeleteBank} onActivateBank={handleActivateBank} />
+          <SharedTable data={sanitizedBanks} actions={actions} />
         </div>
       </div>
 

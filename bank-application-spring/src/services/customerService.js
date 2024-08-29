@@ -1,10 +1,12 @@
 import axios from "axios";
-import { errorToast } from "../utils/Toast/Toast";
+
+const API_BASE_URL = `http://localhost:8080`;
+const accessToken = localStorage.getItem("Authorization");
 
 export const makeNewTransaction = async ({ senderAccount, receiverAccount, amount }) => {
   try {
     const response = await axios.post(
-      `http://localhost:8080/api/transactions/${senderAccount}/${receiverAccount}`,
+      `${API_BASE_URL}/api/transactions/${senderAccount}/${receiverAccount}`,
       {},
       {
         params: {
@@ -12,7 +14,7 @@ export const makeNewTransaction = async ({ senderAccount, receiverAccount, amoun
         },
 
         headers: {
-          Authorization: `Bearer ${localStorage.getItem("Authorization")}`,
+          Authorization: `Bearer ${accessToken}`,
         },
       }
     );
@@ -20,29 +22,28 @@ export const makeNewTransaction = async ({ senderAccount, receiverAccount, amoun
     return response.data;
   } catch (error) {
     console.error(error);
-    errorToast(error.response.data.message);
+    throw error;
   }
 };
 
 export const getAccountByAccountNumber = async (accountNumber) => {
   try {
-    const response = await axios.get(`http://localhost:8080/api/accounts/${accountNumber}`, {
+    const response = await axios.get(`${API_BASE_URL}/api/accounts/${accountNumber}`, {
       headers: {
-        Authorization: `Bearer ${localStorage.getItem("Authorization")}`,
+        Authorization: `Bearer ${accessToken}`,
       },
     });
 
     return response.data;
   } catch (error) {
     console.error(error);
-    errorToast(error.response.data.message);
+    throw error;
   }
 };
 
-
 export const searchTransactions = async ({ size, page, transactionId, accountNumber, startDate, endDate, minAmount, maxAmount }) => {
   try {
-    const response = await axios.get(`http://localhost:8080/api/transactions/search`, {
+    const response = await axios.get(`${API_BASE_URL}/api/transactions/search`, {
       params: {
         transactionId,
         accountNumber,
@@ -54,13 +55,13 @@ export const searchTransactions = async ({ size, page, transactionId, accountNum
         size,
       },
       headers: {
-        Authorization: `Bearer ${localStorage.getItem("Authorization")}`,
+        Authorization: `Bearer ${accessToken}`,
       },
     });
 
     return response.data;
   } catch (error) {
     console.error(error);
-    errorToast(error.response.data.message);
+    throw error;
   }
 };
